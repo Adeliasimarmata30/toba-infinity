@@ -1,0 +1,21 @@
+{
+  "id": "dest-gibeon",
+  "name": "Bukit Gibeon",
+  "description": "A sprawling family spiritual center and water amusement park built around a spectacular natural mountain spring waterfall that cascades straight into a large, crystal-clear swimming pool.",
+  "district": "Toba",
+  "category": "Family",
+  "latitude": 2.3854,
+  "longitude": 99.1121,
+  "openingHours": "08:00 - 18:00",
+  "ticketPrice": 20000,
+  "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.5,
+  "facilities": [
+    "Natural Spring Swimming Pools",
+    "Waterfall",
+    "Spiritual Retreat Rooms",
+    "Toilets",
+    "Cafe",
+    "Gazebos"
+  ]
+}

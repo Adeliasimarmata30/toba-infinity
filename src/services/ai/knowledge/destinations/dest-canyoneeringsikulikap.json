@@ -1,0 +1,20 @@
+{
+  "id": "dest-canyoneeringsikulikap",
+  "name": "Canyoneering di Air Terjun Sikulikap",
+  "description": "Aktivitas petualangan ekstrem menantang di kawasan Penatapan Doulu, Berastagi. Canyoneering menggabungkan teknik trekking menyusuri ngarai sempit, rappelling menuruni tebing licin di samping derasnya guyuran Air Terjun Sikulikap, memanjat dinding batu, serta melompat dan meluncur ke dalam kolam alami air pegunungan yang sangat dingin.",
+  "district": "Karo",
+  "category": "Adventure",
+  "latitude": 3.1954,
+  "longitude": 98.5255,
+  "openingHours": "08:30 WIB - 16:00 WIB",
+  "ticketPrice": 150000,
+  "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.7,
+  "facilities": [
+    "Rappelling Harness & Ropes",
+    "Safety Helmet",
+    "Wet Suits & Neoprene Socks",
+    "Professional Rescue Guides",
+    "First Aid Kit"
+  ]
+}

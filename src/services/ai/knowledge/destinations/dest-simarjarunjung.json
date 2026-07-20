@@ -1,0 +1,21 @@
+{
+  "id": "dest-simarjarunjung",
+  "name": "Bukit Indah Simarjarunjung",
+  "description": "Menawarkan mahakarya lanskap alam spektakuler di mana Anda dapat memandangi bentangan luas perairan biru Danau Toba dari ketinggian puncak bukit yang sejuk. Destinasi ini dilengkapi dengan puluhan spot foto kreatif yang sangat instagramable, mulai dari rumah pohon, sepeda gantung yang memicu adrenalin, kursi layang, ayunan langit, hingga gardu pandang kayu berlatar kaldera.",
+  "district": "Simalungun",
+  "category": "Nature",
+  "latitude": 2.7667,
+  "longitude": 98.7833,
+  "openingHours": "07:00 WIB - 19:00 WIB",
+  "ticketPrice": 15000,
+  "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.7,
+  "facilities": [
+    "Instagenic Photo Spots",
+    "Treehouses",
+    "Suspended Bicycle",
+    "Local Cafes",
+    "Restrooms",
+    "Parking Space"
+  ]
+}

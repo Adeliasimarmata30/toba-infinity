@@ -1,0 +1,634 @@
+[
+  {
+    "id": "dest-holbung",
+    "name": "Bukit Holbung",
+    "description": "A breathtaking rolling grassland hill offering 360-degree panoramic views of Lake Toba and the Samosir island landscape. Known colloquially as \"Teletubbies Hill,\" it is a popular spot for camping, trekking, and watching ethereal sunrises.",
+    "district": "Samosir",
+    "category": "Nature",
+    "latitude": 2.5683,
+    "longitude": 98.6345,
+    "openingHours": "24 Hours",
+    "ticketPrice": 10000,
+    "image": "https://images.unsplash.com/photo-1594568284297-7c64464062b1?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.8,
+    "facilities": [
+      "Parking Lot",
+      "Toilets",
+      "Food Stalls",
+      "Camping Ground",
+      "Photo Spots"
+    ]
+  },
+  {
+    "id": "dest-siallagan",
+    "name": "Huta Siallagan",
+    "description": "An ancient Batak stone village on Samosir Island that preserves the iconic stone chairs (\"Batu Persidangan\") where the Siallagan kings held council and trials, featuring authentic, towering Batak Bolon houses.",
+    "district": "Samosir",
+    "category": "Culture",
+    "latitude": 2.6806,
+    "longitude": 98.8658,
+    "openingHours": "08:00 - 18:00",
+    "ticketPrice": 20000,
+    "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.7,
+    "facilities": [
+      "Information Center",
+      "Tour Guide",
+      "Toilets",
+      "Souvenir Shops",
+      "Batak Traditional Costumes"
+    ]
+  },
+  {
+    "id": "dest-tomok",
+    "name": "Tomok Heritage Village",
+    "description": "The historic gateway to Samosir Island. This traditional village houses the ancient stone sarcophagus of King Sidabutar, legendary Batak woodcarving galleries, and live Sigale-gale puppet dance performances.",
+    "district": "Samosir",
+    "category": "Culture",
+    "latitude": 2.6611,
+    "longitude": 98.8622,
+    "openingHours": "07:00 - 18:00",
+    "ticketPrice": 15000,
+    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.6,
+    "facilities": [
+      "Parking Lot",
+      "Souvenir Center",
+      "Food Stalls",
+      "Traditional Dancers",
+      "Museum"
+    ]
+  },
+  {
+    "id": "dest-tele",
+    "name": "Menara Pandang Tele",
+    "description": "A multi-story observation tower built at the edge of the caldera rim road. It offers the absolute highest aerial vantage point of Lake Toba, Samosir Island, and the winding canyon curves below.",
+    "district": "Samosir",
+    "category": "Nature",
+    "latitude": 2.5934,
+    "longitude": 98.6511,
+    "openingHours": "06:00 - 19:00",
+    "ticketPrice": 15000,
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.5,
+    "facilities": [
+      "Toilets",
+      "Cafe",
+      "Parking Space",
+      "Observation Deck",
+      "Worship Room"
+    ]
+  },
+  {
+    "id": "dest-parbaba",
+    "name": "Pantai Pasir Putih Parbaba",
+    "description": "A unique white-sand freshwater beach located on Samosir Island. The calm, shallow waters and cool mountain breezes make it an excellent playground for water sports and family activities.",
+    "district": "Samosir",
+    "category": "Family",
+    "latitude": 2.6467,
+    "longitude": 98.7112,
+    "openingHours": "07:00 - 21:00",
+    "ticketPrice": 10000,
+    "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.4,
+    "facilities": [
+      "Water Sports (Jet Ski, Banana Boat)",
+      "Toilets",
+      "Gazebos",
+      "Local Restaurants",
+      "Souvenir Shops"
+    ]
+  },
+  {
+    "id": "dest-batukursi",
+    "name": "Batu Kursi Raja Siallagan",
+    "description": "The ritual stone chairs situated deep in Huta Siallagan village. These 200-year-old volcanic tuffs were used for legislative assemblies, legal trials of criminals, and capital punishment executions in tribal times.",
+    "district": "Samosir",
+    "category": "Culture",
+    "latitude": 2.6811,
+    "longitude": 98.866,
+    "openingHours": "08:00 - 18:00",
+    "ticketPrice": 10000,
+    "image": "https://images.unsplash.com/photo-1473163928189-364b2c4e1135?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.7,
+    "facilities": [
+      "Guided Tour",
+      "Information Board",
+      "Photo spots",
+      "Rest Area"
+    ]
+  },
+  {
+    "id": "dest-simanindo",
+    "name": "Huta Bolon Simanindo Museum",
+    "description": "A former royal estate of King Sidauruk converted into an open-air museum. It showcases pristine ancestral Bolon houses, heirloom weapons, agricultural tools, and hosts daily Tor-Tor dances accompanied by Gondang music.",
+    "district": "Samosir",
+    "category": "Culture",
+    "latitude": 2.7483,
+    "longitude": 98.7523,
+    "openingHours": "08:30 - 17:00",
+    "ticketPrice": 25000,
+    "image": "https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.6,
+    "facilities": [
+      "Folk Museum",
+      "Tor-Tor Performance",
+      "Arts Gallery",
+      "Toilets",
+      "Handicraft Shops"
+    ]
+  },
+  {
+    "id": "dest-bulbul",
+    "name": "Pantai Lumban Bulbul",
+    "description": "A beautiful white sandy beach located in Balige on the southern shores of Lake Toba. Highly popular for domestic families due to its shallow shores, children playgrounds, and stellar views of the open lake.",
+    "district": "Toba",
+    "category": "Family",
+    "latitude": 2.3486,
+    "longitude": 99.0851,
+    "openingHours": "06:00 - 19:00",
+    "ticketPrice": 10000,
+    "image": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.3,
+    "facilities": [
+      "Kids Play Area",
+      "Culinary Center",
+      "Boat Rentals",
+      "Gazebos",
+      "Toilets",
+      "Showers"
+    ]
+  },
+  {
+    "id": "dest-tbsilalahi",
+    "name": "TB Silalahi Center",
+    "description": "A modern, grand museum complex built to preserve Batak cultural values. Features military history archives, life-sized displays of all six Batak sub-tribes, historical relics, and a scale-model replicas village.",
+    "district": "Toba",
+    "category": "Culture",
+    "latitude": 2.3391,
+    "longitude": 99.0559,
+    "openingHours": "08:00 - 17:00",
+    "ticketPrice": 30000,
+    "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.8,
+    "facilities": [
+      "Batak Art Museum",
+      "Military Museum",
+      "Souvenir Shop",
+      "Food Court",
+      "Playground",
+      "Spacious Parking"
+    ]
+  },
+  {
+    "id": "dest-sipisopiso",
+    "name": "Air Terjun Sipiso-piso",
+    "description": "One of the tallest plunge waterfalls in Indonesia, cascading 120 meters down a cliffside carved from volcanic eruptions. It feeds directly into Lake Toba at the northernmost point of the caldera rim.",
+    "district": "Karo",
+    "category": "Nature",
+    "latitude": 2.9157,
+    "longitude": 98.5239,
+    "openingHours": "07:00 - 18:00",
+    "ticketPrice": 15000,
+    "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.9,
+    "facilities": [
+      "Viewing Platforms",
+      "Trekking Trails",
+      "Toilets",
+      "Dozens of Cafes",
+      "Parking Lot",
+      "Security Outpost"
+    ]
+  },
+  {
+    "id": "dest-tongging",
+    "name": "Desa Wisata Tongging",
+    "description": "A tranquil agricultural lakeside village settled directly below the northern hills. Famous for its scenic rice terraces, fresh tilapia aquaculture fish cages, and a relaxed, laidback rural escape.",
+    "district": "Karo",
+    "category": "Nature",
+    "latitude": 2.9101,
+    "longitude": 98.5304,
+    "openingHours": "24 Hours",
+    "ticketPrice": 5000,
+    "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.5,
+    "facilities": [
+      "Lakeside Restaurants",
+      "Tilapia Fishing",
+      "Local Lodging",
+      "Farm Tours"
+    ]
+  },
+  {
+    "id": "dest-sipinsur",
+    "name": "Geosite Sipinsur",
+    "description": "A gorgeous 2-hectare pine forest park seated on a high cliff ridge. Known as the Geosite Sipinsur, it offers spectacular, mist-shrouded viewpoints facing directly down toward Samosir and Muara Bay.",
+    "district": "Humbang Hasundutan",
+    "category": "Nature",
+    "latitude": 2.3503,
+    "longitude": 98.8156,
+    "openingHours": "07:00 - 18:00",
+    "ticketPrice": 10000,
+    "image": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.7,
+    "facilities": [
+      "Pine Forest Trekking",
+      "Kids Playground",
+      "Viewing Decks",
+      "Camping Spot",
+      "Food Court",
+      "Clean Bathrooms"
+    ]
+  },
+  {
+    "id": "dest-parapat",
+    "name": "Pantai Bebas Parapat",
+    "description": "The major mainland harbor town and transit beach of Lake Toba, newly modernized with open public squares, clean waterfront pathways, amphitheaters, and continuous ferries heading to Samosir Island.",
+    "district": "Simalungun",
+    "category": "Family",
+    "latitude": 2.6625,
+    "longitude": 98.9372,
+    "openingHours": "24 Hours",
+    "ticketPrice": 0,
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.4,
+    "facilities": [
+      "Lakeside Promenade",
+      "Speedboat Hires",
+      "Amphitheater",
+      "Food Outlets",
+      "Toilets",
+      "Transit Port"
+    ]
+  },
+  {
+    "id": "dest-gibeon",
+    "name": "Bukit Gibeon",
+    "description": "A sprawling family spiritual center and water amusement park built around a spectacular natural mountain spring waterfall that cascades straight into a large, crystal-clear swimming pool.",
+    "district": "Toba",
+    "category": "Family",
+    "latitude": 2.3854,
+    "longitude": 99.1121,
+    "openingHours": "08:00 - 18:00",
+    "ticketPrice": 20000,
+    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.5,
+    "facilities": [
+      "Natural Spring Swimming Pools",
+      "Waterfall",
+      "Spiritual Retreat Rooms",
+      "Toilets",
+      "Cafe",
+      "Gazebos"
+    ]
+  },
+  {
+    "id": "dest-efrata",
+    "name": "Air Terjun Efrata",
+    "description": "A striking, wide curtain-style waterfall that cascades over a smooth 20-meter vertical black rock wall, surrounded by pristine lush agricultural fields and towering hills on the path to Samosir.",
+    "district": "Samosir",
+    "category": "Nature",
+    "latitude": 2.5855,
+    "longitude": 98.6186,
+    "openingHours": "06:00 - 18:00",
+    "ticketPrice": 10000,
+    "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.6,
+    "facilities": [
+      "Washing Chambers",
+      "Toilets",
+      "Parking Site",
+      "Paved Walking Trails",
+      "Picnic Spot"
+    ]
+  },
+  {
+    "id": "dest-sibeabea",
+    "name": "Bukit Sibea-bea",
+    "description": "A modern scenic hill on Samosir Island, famous for its magnificent winding asphalt \"eight-turn\" road that scales the cliffside and leads up to a towering 61-meter Jesus Christ Blesses Statue standing as a landmark.",
+    "district": "Samosir",
+    "category": "Family",
+    "latitude": 2.5511,
+    "longitude": 98.6083,
+    "openingHours": "07:00 - 20:00",
+    "ticketPrice": 50000,
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.8,
+    "facilities": [
+      "Monument Observation Deck",
+      "Scenic Highway",
+      "Souvenir Shops",
+      "Restrooms",
+      "Parking Hub",
+      "Photography Spots"
+    ]
+  },
+  {
+    "id": "dest-geocaldera",
+    "name": "Geosite Kaldera Toba Sigulatti",
+    "description": "The scientific heart of the Geopark. This UNESCO-certified geosite traces the ancient volcanic mega-eruption that shaped the entire caldera and includes interactive earth sciences displays and archaeological sites.",
+    "district": "Samosir",
+    "category": "Nature",
+    "latitude": 2.6133,
+    "longitude": 98.6744,
+    "openingHours": "09:00 - 17:00",
+    "ticketPrice": 20000,
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.8,
+    "facilities": [
+      "Scientific Exhibition Hall",
+      "Toilets",
+      "Library",
+      "Audio-Visual Auditorium",
+      "Cafe",
+      "Geology Field Station"
+    ]
+  },
+  {
+    "id": "dest-sibodiala",
+    "name": "Paralayang Puncak Sibodiala, Balige",
+    "description": "Spot paralayang Puncak Sibodiala, Balige dibuka tahun 2024. Puncak Sibodiala memiliki pemandangan yang memukau mulai dari hutan pinus, deretan perbukitan, perkampungan dan perkebunan warga hingga pemandangan Danau Toba yang sangat luas. Dekat dengan Puncak Sibodiala terdapat Batu Basiha, formasi batuan vulkanik sisa ledakan maha dahsyat Toba 74.000 tahun silam. Pengunjung bisa mencoba paralayang dengan tarif Rp 550.000 (sudah termasuk asuransi kecelakaan).",
+    "district": "Toba",
+    "category": "Adventure",
+    "latitude": 2.3168,
+    "longitude": 99.0984,
+    "openingHours": "10:00 WIB - 17:00 WIB",
+    "ticketPrice": 550000,
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.8,
+    "facilities": [
+      "Paragliding Equipment",
+      "Professional Instructor",
+      "Insurance",
+      "Safety Gear",
+      "Photo Spots",
+      "Parking Lot"
+    ]
+  },
+  {
+    "id": "dest-jumabulu",
+    "name": "Juma Bulu River Side Ajibata",
+    "description": "Juma Bulu River Side Ajibata menawarkan pesona sungai yang sejuk, jernih, dan dikelilingi oleh persawahan hijau nan asri di Desa Pardomuan Ajibata. Objek wisata ini sangat populer dengan aktivitas River Tubing, area berkemah (camping ground) di tepi sungai yang menenangkan, serta jalur tracking menantang menuju Air Terjun Batu Papan yang eksotis.",
+    "district": "Toba",
+    "category": "Nature",
+    "latitude": 2.6105,
+    "longitude": 98.9664,
+    "openingHours": "08:00 WIB - 18:00 WIB",
+    "ticketPrice": 50000,
+    "image": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.6,
+    "facilities": [
+      "River Tubing",
+      "Camping Ground",
+      "Trekking Guide",
+      "Waterfall Access",
+      "Toilets",
+      "Worship Room"
+    ]
+  },
+  {
+    "id": "dest-kano",
+    "name": "Permainan Kano Pantai Bulbul",
+    "description": "Aktivitas rekreasi air seru menggunakan perahu kano ringan berkapasitas maksimal dua orang di sepanjang pesisir Pantai Pasir Putih Lumban Bulbul, Balige. Mengayuh kano di atas jernihnya air Danau Toba yang tenang sambil menikmati tiupan angin sepoi-sepoi pegunungan adalah pengalaman santai yang ramah keluarga.",
+    "district": "Toba",
+    "category": "Adventure",
+    "latitude": 2.3486,
+    "longitude": 99.0851,
+    "openingHours": "08:00 WIB - 18:00 WIB",
+    "ticketPrice": 50000,
+    "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.5,
+    "facilities": [
+      "Canoe Rental",
+      "Life Jackets",
+      "Safety Instructors",
+      "Beach Gazebos",
+      "Toilets"
+    ]
+  },
+  {
+    "id": "dest-simarjarunjung",
+    "name": "Bukit Indah Simarjarunjung",
+    "description": "Menawarkan mahakarya lanskap alam spektakuler di mana Anda dapat memandangi bentangan luas perairan biru Danau Toba dari ketinggian puncak bukit yang sejuk. Destinasi ini dilengkapi dengan puluhan spot foto kreatif yang sangat instagramable, mulai dari rumah pohon, sepeda gantung yang memicu adrenalin, kursi layang, ayunan langit, hingga gardu pandang kayu berlatar kaldera.",
+    "district": "Simalungun",
+    "category": "Nature",
+    "latitude": 2.7667,
+    "longitude": 98.7833,
+    "openingHours": "07:00 WIB - 19:00 WIB",
+    "ticketPrice": 15000,
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.7,
+    "facilities": [
+      "Instagenic Photo Spots",
+      "Treehouses",
+      "Suspended Bicycle",
+      "Local Cafes",
+      "Restrooms",
+      "Parking Space"
+    ]
+  },
+  {
+    "id": "dest-flyboard",
+    "name": "Flyboard di Parapat",
+    "description": "Atraksi olahraga air modern terbaru yang sedang tren di perairan Parapat, Danau Toba. Menggunakan papan terbang bertenaga tekanan jet air tinggi, wisatawan dapat melayang bebas hingga beberapa meter di atas permukaan Danau Toba dan melakukan berbagai manuver akrobatik udara yang menantang.",
+    "district": "Simalungun",
+    "category": "Adventure",
+    "latitude": 2.6625,
+    "longitude": 98.9372,
+    "openingHours": "09:00 WIB - 17:00 WIB",
+    "ticketPrice": 250000,
+    "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.8,
+    "facilities": [
+      "Flyboard Apparatus",
+      "Safety Helmet",
+      "Life Jacket",
+      "Professional Instructor",
+      "Speedboat Support"
+    ]
+  },
+  {
+    "id": "dest-atvsidamanik",
+    "name": "ATV di Kebun Teh Sidamanik",
+    "description": "Menjelajahi keindahan hijau perkebunan teh legendaris Sidamanik menggunakan kendaraan motor tangguh ATV (All Terrain Vehicle). Wisatawan diajak berkendara menyusuri jalur tanah di tengah hamparan rumpun teh yang berundak-undak, ditemani udara pegunungan yang sangat bersih, sejuk, dan berkabut tipis.",
+    "district": "Simalungun",
+    "category": "Adventure",
+    "latitude": 2.9234,
+    "longitude": 99.0432,
+    "openingHours": "08:00 WIB - 17:00 WIB",
+    "ticketPrice": 50000,
+    "image": "https://images.unsplash.com/photo-1531315630201-bb15abeb1653?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.6,
+    "facilities": [
+      "ATV Rental (30 Mins)",
+      "Safety Helmet",
+      "Guided Tea Trails",
+      "Refreshment Stalls",
+      "Parking Lot"
+    ]
+  },
+  {
+    "id": "dest-kulikiparalayang",
+    "name": "Kuliki Paralayang di Tongging",
+    "description": "Wisata olahraga udara prestisius di Desa Wisata Tongging, Kabupaten Karo. Lepas landas dari perbukitan tinggi menggunakan parasut tandem, wisatawan akan melayang bebas memanfaatkan hembusan angin pegunungan yang ideal, disuguhi pemandangan spektakuler Air Terjun Sipiso-piso dari udara, lembah subur Tongging, serta perairan utara Danau Toba yang berkilau.",
+    "district": "Karo",
+    "category": "Adventure",
+    "latitude": 2.9101,
+    "longitude": 98.5304,
+    "openingHours": "09:00 WIB - 17:00 WIB",
+    "ticketPrice": 900000,
+    "image": "https://images.unsplash.com/photo-1594568284297-7c64464062b1?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.9,
+    "facilities": [
+      "Tandem Flight Pilots",
+      "Certified Safety Gear",
+      "Personal Insurance",
+      "GoPro Aerial Video",
+      "Rest Lounge"
+    ]
+  },
+  {
+    "id": "dest-canyoneeringsikulikap",
+    "name": "Canyoneering di Air Terjun Sikulikap",
+    "description": "Aktivitas petualangan ekstrem menantang di kawasan Penatapan Doulu, Berastagi. Canyoneering menggabungkan teknik trekking menyusuri ngarai sempit, rappelling menuruni tebing licin di samping derasnya guyuran Air Terjun Sikulikap, memanjat dinding batu, serta melompat dan meluncur ke dalam kolam alami air pegunungan yang sangat dingin.",
+    "district": "Karo",
+    "category": "Adventure",
+    "latitude": 3.1954,
+    "longitude": 98.5255,
+    "openingHours": "08:30 WIB - 16:00 WIB",
+    "ticketPrice": 150000,
+    "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.7,
+    "facilities": [
+      "Rappelling Harness & Ropes",
+      "Safety Helmet",
+      "Wet Suits & Neoprene Socks",
+      "Professional Rescue Guides",
+      "First Aid Kit"
+    ]
+  },
+  {
+    "id": "dest-berkudagundaling",
+    "name": "Berkuda di Gundaling",
+    "description": "Menikmati udara dingin pegunungan Berastagi sambil menunggangi kuda sewaan menyusuri jalur rindang di puncak Bukit Gundaling. Pengunjung dapat memilih berkuda mandiri dengan pengawasan pemandu lokal, atau berkeliling santai menaiki delman (kereta kuda hias) bersama keluarga, menempuh rute asri dari puncak bukit menuju Pasar Buah Berastagi.",
+    "district": "Karo",
+    "category": "Family",
+    "latitude": 3.1894,
+    "longitude": 98.5042,
+    "openingHours": "08:00 WIB - 17:30 WIB",
+    "ticketPrice": 20000,
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.5,
+    "facilities": [
+      "Horse Rental",
+      "Decorated Delman",
+      "Pemandu Kuda",
+      "Souvenir Stalls",
+      "Photo Spots"
+    ]
+  },
+  {
+    "id": "dest-pacuankuda",
+    "name": "Pacuan Kuda Hoda Marsiadu Siborong-borong",
+    "description": "Olahraga pacuan kuda tradisional Batak legendaris yang rutin diselenggarakan secara meriah di Siborong-borong, Tapanuli Utara. Event budaya sakral ini memadukan ketangkasan berkuda para joki muda setempat dengan ritual upacara adat, doa bersama memohon keselamatan, serta dentuman Gondang Sabangunan yang membakar semangat penonton sebagai wujud solidaritas persaudaraan Batak.",
+    "district": "North Tapanuli",
+    "category": "Culture",
+    "latitude": 2.2135,
+    "longitude": 98.9712,
+    "openingHours": "Event-Based Schedule",
+    "ticketPrice": 25000,
+    "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.8,
+    "facilities": [
+      "Race Track Arena",
+      "Tribun Penonton",
+      "Local Food Court",
+      "Gondang Live Music",
+      "Restrooms"
+    ]
+  },
+  {
+    "id": "dest-paralayanghutaginjang",
+    "name": "Paralayang Huta Ginjang",
+    "description": "Terletak di Kecamatan Muara, Tapanuli Utara pada ketinggian 1500 mdpl, Puncak Huta Ginjang diakui sebagai salah satu spot paralayang terbaik di Asia Tenggara karena memiliki kekuatan hembusan angin yang sangat ideal. Meluncur dari sini menyajikan sensasi terbang melintasi langit biru berlatar endapan vulkanik muda kaldera, Pulau Sibandang, dan jajaran bukit pinus.",
+    "district": "North Tapanuli",
+    "category": "Adventure",
+    "latitude": 2.2741,
+    "longitude": 98.8953,
+    "openingHours": "08:00 WIB - 18:00 WIB",
+    "ticketPrice": 500000,
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.9,
+    "facilities": [
+      "Tandem Flights",
+      "Professional Flight Instructors",
+      "Telescope Viewing Deck",
+      "Pine Forest Hiking Trails",
+      "Food Court",
+      "Worship Room"
+    ]
+  },
+  {
+    "id": "dest-waterfront",
+    "name": "Waterfront City Pangururan",
+    "description": "Mahakarya destinasi modern pertama di tepian Danau Toba, Pangururan, Samosir yang mengintegrasikan keindahan tata air dengan pertunjukan seni canggih. Menampilkan atraksi air mancur menari (musical dancing fountain) warna-warni megah diiringi musik etnik Batak, serta pemutaran film/kisah legenda terbentuknya Danau Toba melalui teknologi pantulan proyektor air yang memukau.",
+    "district": "Samosir",
+    "category": "Family",
+    "latitude": 2.6288,
+    "longitude": 98.7188,
+    "openingHours": "Sesi I: 19:00 WIB, Sesi II: 21:00 WIB",
+    "ticketPrice": 0,
+    "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.8,
+    "facilities": [
+      "Musical Fountain Show",
+      "Interactive Water Screen Projection",
+      "Seaside Pedestrian Walkway",
+      "Aesthetic Bridges",
+      "Food Court",
+      "Toilets"
+    ]
+  },
+  {
+    "id": "dest-sigalegale",
+    "name": "Situs Budaya Boneka Sigale-gale",
+    "description": "Pertunjukan boneka kayu mistis legendaris di Desa Tomok, Samosir. Berasal dari kata \"gale\" yang berarti lemah gemulai, boneka seukuran manusia ini diletakkan di atas podium kayu dan dimainkan dengan sistem tali mekanis rahasia sehingga dapat menari Tor-Tor secara indah. Pertunjukan ini mengenang kisah haru Manggale, putra Raja Rahat penguasa Samosir kuno yang gugur di medan perang.",
+    "district": "Samosir",
+    "category": "Culture",
+    "latitude": 2.6611,
+    "longitude": 98.8622,
+    "openingHours": "08:00 WIB - 17:30 WIB",
+    "ticketPrice": 15000,
+    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.7,
+    "facilities": [
+      "Live Tor-Tor Performance",
+      "Traditional Gondang Musicians",
+      "Batak Traditional Cloths (Ulos)",
+      "Cultural Guides",
+      "Souvenir Outlets"
+    ]
+  },
+  {
+    "id": "dest-hutaraja",
+    "name": "Kampung Ulos Hutaraja",
+    "description": "Kampung Ulos Hutaraja di Simanindo, Samosir adalah salah satu desa adat terbaik yang melestarikan warisan seni tenun kain Ulos Batak secara turun-temurun sejak ratusan tahun silam. Wisatawan dapat menyaksikan langsung para perajin wanita menenun ulos menggunakan alat tenun gedogan kayu tradisional, berinteraksi di bawah bayang-bayang Ruma Bolon adat asli yang indah, dan membeli suvenir tenun otentik.",
+    "district": "Samosir",
+    "category": "Culture",
+    "latitude": 2.5954,
+    "longitude": 98.7423,
+    "openingHours": "08:00 WIB - 18:00 WIB",
+    "ticketPrice": 10000,
+    "image": "https://images.unsplash.com/photo-1621886292650-520f76c747d6?q=80&w=800&auto=format&fit=crop",
+    "rating": 4.9,
+    "facilities": [
+      "Weaving Workshop Tour",
+      "Handicraft Souvenir Shops",
+      "Historic Ruma Bolon Houses",
+      "Local Home Guides",
+      "Worship Room",
+      "Clean Toilets"
+    ]
+  }
+]

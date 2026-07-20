@@ -1,0 +1,20 @@
+{
+  "id": "dest-flyboard",
+  "name": "Flyboard di Parapat",
+  "description": "Atraksi olahraga air modern terbaru yang sedang tren di perairan Parapat, Danau Toba. Menggunakan papan terbang bertenaga tekanan jet air tinggi, wisatawan dapat melayang bebas hingga beberapa meter di atas permukaan Danau Toba dan melakukan berbagai manuver akrobatik udara yang menantang.",
+  "district": "Simalungun",
+  "category": "Adventure",
+  "latitude": 2.6625,
+  "longitude": 98.9372,
+  "openingHours": "09:00 WIB - 17:00 WIB",
+  "ticketPrice": 250000,
+  "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.8,
+  "facilities": [
+    "Flyboard Apparatus",
+    "Safety Helmet",
+    "Life Jacket",
+    "Professional Instructor",
+    "Speedboat Support"
+  ]
+}

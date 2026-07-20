@@ -1,0 +1,20 @@
+{
+  "id": "dest-sigalegale",
+  "name": "Situs Budaya Boneka Sigale-gale",
+  "description": "Pertunjukan boneka kayu mistis legendaris di Desa Tomok, Samosir. Berasal dari kata \"gale\" yang berarti lemah gemulai, boneka seukuran manusia ini diletakkan di atas podium kayu dan dimainkan dengan sistem tali mekanis rahasia sehingga dapat menari Tor-Tor secara indah. Pertunjukan ini mengenang kisah haru Manggale, putra Raja Rahat penguasa Samosir kuno yang gugur di medan perang.",
+  "district": "Samosir",
+  "category": "Culture",
+  "latitude": 2.6611,
+  "longitude": 98.8622,
+  "openingHours": "08:00 WIB - 17:30 WIB",
+  "ticketPrice": 15000,
+  "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.7,
+  "facilities": [
+    "Live Tor-Tor Performance",
+    "Traditional Gondang Musicians",
+    "Batak Traditional Cloths (Ulos)",
+    "Cultural Guides",
+    "Souvenir Outlets"
+  ]
+}

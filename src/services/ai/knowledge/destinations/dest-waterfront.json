@@ -1,0 +1,21 @@
+{
+  "id": "dest-waterfront",
+  "name": "Waterfront City Pangururan",
+  "description": "Mahakarya destinasi modern pertama di tepian Danau Toba, Pangururan, Samosir yang mengintegrasikan keindahan tata air dengan pertunjukan seni canggih. Menampilkan atraksi air mancur menari (musical dancing fountain) warna-warni megah diiringi musik etnik Batak, serta pemutaran film/kisah legenda terbentuknya Danau Toba melalui teknologi pantulan proyektor air yang memukau.",
+  "district": "Samosir",
+  "category": "Family",
+  "latitude": 2.6288,
+  "longitude": 98.7188,
+  "openingHours": "Sesi I: 19:00 WIB, Sesi II: 21:00 WIB",
+  "ticketPrice": 0,
+  "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.8,
+  "facilities": [
+    "Musical Fountain Show",
+    "Interactive Water Screen Projection",
+    "Seaside Pedestrian Walkway",
+    "Aesthetic Bridges",
+    "Food Court",
+    "Toilets"
+  ]
+}

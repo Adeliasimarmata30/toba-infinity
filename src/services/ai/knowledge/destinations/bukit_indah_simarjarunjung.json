@@ -1,0 +1,13 @@
+{
+  "id": "dest-simarjarunjung",
+  "name": "Bukit Indah Simarjarunjung",
+  "category": "Nature",
+  "district": "Simalungun",
+  "description": "Dari puncak bukit, pengunjung bisa menikmati panorama Danau Toba yang menakjubkan. Selain menikmati pemandangan Danau Toba yang memukau dari Bukit Indah Simarjarunjung, pengunjung bisa berfoto di berbagai spot yang sudah tersedia. Spot-spot foto ini antara lain rumah pohon, sepeda gantung, kursi dan meja melayang, pohon cinta sampai dengan gardu pandang.",
+  "ticketPrice": 15000,
+  "openingHours": "07.00 WIB - 19.00 WIB",
+  "facilities": ["Photo Spots", "Treehouse", "Zipline / Sepeda Gantung", "Cafe", "Toilets", "Parking Lot"],
+  "latitude": 2.7667,
+  "longitude": 98.7833,
+  "story": "Kawasan Bukit Indah Simarjarunjung (BIS) dikembangkan secara kreatif oleh pemuda dan masyarakat lokal Simalungun untuk memaksimalkan keindahan perbukitan pinus dengan konsep wisata kekinian yang menakjubkan."
+}

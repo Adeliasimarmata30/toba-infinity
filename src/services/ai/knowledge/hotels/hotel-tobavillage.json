@@ -1,0 +1,18 @@
+{
+  "id": "hotel-tobavillage",
+  "name": "Toba Village Inn Samosir",
+  "description": "A quaint, highly charming German-Indonesian boutique lodge seated peacefully on Samosir Island shores. Known for its cozy home-like feel, gorgeous pool, and excellent organic fusion restaurant.",
+  "rating": 4.6,
+  "facilities": [
+    "Lakeside Swim Pool",
+    "Direct Beach Access",
+    "Organic Garden Cafe",
+    "Free Wi-Fi",
+    "Bicycle Rentals"
+  ],
+  "priceRange": "Rp 500.000 - Rp 1.100.000",
+  "district": "Samosir",
+  "latitude": 2.6791,
+  "longitude": 98.8456,
+  "image": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=800&auto=format&fit=crop"
+}

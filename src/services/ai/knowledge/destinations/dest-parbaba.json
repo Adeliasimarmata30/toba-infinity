@@ -1,0 +1,20 @@
+{
+  "id": "dest-parbaba",
+  "name": "Pantai Pasir Putih Parbaba",
+  "description": "A unique white-sand freshwater beach located on Samosir Island. The calm, shallow waters and cool mountain breezes make it an excellent playground for water sports and family activities.",
+  "district": "Samosir",
+  "category": "Family",
+  "latitude": 2.6467,
+  "longitude": 98.7112,
+  "openingHours": "07:00 - 21:00",
+  "ticketPrice": 10000,
+  "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.4,
+  "facilities": [
+    "Water Sports (Jet Ski, Banana Boat)",
+    "Toilets",
+    "Gazebos",
+    "Local Restaurants",
+    "Souvenir Shops"
+  ]
+}

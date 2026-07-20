@@ -1,0 +1,20 @@
+{
+  "id": "dest-pacuankuda",
+  "name": "Pacuan Kuda Hoda Marsiadu Siborong-borong",
+  "description": "Olahraga pacuan kuda tradisional Batak legendaris yang rutin diselenggarakan secara meriah di Siborong-borong, Tapanuli Utara. Event budaya sakral ini memadukan ketangkasan berkuda para joki muda setempat dengan ritual upacara adat, doa bersama memohon keselamatan, serta dentuman Gondang Sabangunan yang membakar semangat penonton sebagai wujud solidaritas persaudaraan Batak.",
+  "district": "North Tapanuli",
+  "category": "Culture",
+  "latitude": 2.2135,
+  "longitude": 98.9712,
+  "openingHours": "Event-Based Schedule",
+  "ticketPrice": 25000,
+  "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.8,
+  "facilities": [
+    "Race Track Arena",
+    "Tribun Penonton",
+    "Local Food Court",
+    "Gondang Live Music",
+    "Restrooms"
+  ]
+}

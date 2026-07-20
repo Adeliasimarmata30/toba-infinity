@@ -1,0 +1,13 @@
+{
+  "id": "dest-canyoneeringsikulikap",
+  "name": "Canyoneering di Air Terjun Sikulikap",
+  "category": "Adventure",
+  "district": "Karo",
+  "description": "Canyoneering (atau canyoning) adalah aktivitas petualangan alam yang menggabungkan beberapa teknik seperti: Trekking (menjelajah jalur berbatu atau terjal), Rappelling (turun tebing dengan tali), Climbing (memanjat batu atau dinding lembah), Jumping (melompat ke kolam alami dari tebing atau batu), Sliding (meluncur di aliran air), dan swimming (berenang di sungai atau kolam alami). Canyoneering di Air Terjun Sikulikap cocok untuk pemula-menengah; ada rappelling dan lompatan.",
+  "ticketPrice": 150000,
+  "openingHours": "08.30 WIB - 16.00 WIB.",
+  "facilities": ["Harness & Rope", "Wet Suits", "Helmet", "Professional Guide", "First Aid Kit", "Toilets & Showers"],
+  "latitude": 3.1954,
+  "longitude": 98.5255,
+  "story": "Air Terjun Sikulikap terletak di tengah hutan hujan Berastagi yang lebat, dihuni oleh satwa liar owa sumatera (gibbon) dan dikelilingi tebing batu vulkanik tinggi yang sangat menantang bagi para pencinta panjat tebing."
+}

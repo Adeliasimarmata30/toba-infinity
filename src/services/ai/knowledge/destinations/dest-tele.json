@@ -1,0 +1,20 @@
+{
+  "id": "dest-tele",
+  "name": "Menara Pandang Tele",
+  "description": "A multi-story observation tower built at the edge of the caldera rim road. It offers the absolute highest aerial vantage point of Lake Toba, Samosir Island, and the winding canyon curves below.",
+  "district": "Samosir",
+  "category": "Nature",
+  "latitude": 2.5934,
+  "longitude": 98.6511,
+  "openingHours": "06:00 - 19:00",
+  "ticketPrice": 15000,
+  "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.5,
+  "facilities": [
+    "Toilets",
+    "Cafe",
+    "Parking Space",
+    "Observation Deck",
+    "Worship Room"
+  ]
+}

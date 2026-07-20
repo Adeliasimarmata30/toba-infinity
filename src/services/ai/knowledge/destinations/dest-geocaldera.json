@@ -1,0 +1,21 @@
+{
+  "id": "dest-geocaldera",
+  "name": "Geosite Kaldera Toba Sigulatti",
+  "description": "The scientific heart of the Geopark. This UNESCO-certified geosite traces the ancient volcanic mega-eruption that shaped the entire caldera and includes interactive earth sciences displays and archaeological sites.",
+  "district": "Samosir",
+  "category": "Nature",
+  "latitude": 2.6133,
+  "longitude": 98.6744,
+  "openingHours": "09:00 - 17:00",
+  "ticketPrice": 20000,
+  "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.8,
+  "facilities": [
+    "Scientific Exhibition Hall",
+    "Toilets",
+    "Library",
+    "Audio-Visual Auditorium",
+    "Cafe",
+    "Geology Field Station"
+  ]
+}

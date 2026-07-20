@@ -1,0 +1,11 @@
+{
+  "id": "hotel-marianna",
+  "name": "Marianna Resort & Convention Samosir",
+  "category": "Akomodasi Bintang 5",
+  "district": "Samosir",
+  "description": "Resort bintang lima berstandar internasional pertama di Pulau Samosir. Menawarkan pengalaman menginap mewah dengan villa privat, kolam renang infinity dengan pemandangan Danau Toba 180 derajat yang menakjubkan, spa kelas dunia, pusat kebugaran, dan ruang konvensi termegah.",
+  "priceRange": "Rp 1.800.000 - Rp 5.000.000 per malam",
+  "facilities": ["Infinity Pool", "Luxury Spa & Wellness", "Fitness Center", "Lakeside Restaurant", "Free High-speed Wi-Fi", "Kids Club", "Pusat Bisnis"],
+  "latitude": 2.6712,
+  "longitude": 98.8541
+}

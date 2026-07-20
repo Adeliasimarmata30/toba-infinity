@@ -1,0 +1,20 @@
+{
+  "id": "dest-simanindo",
+  "name": "Huta Bolon Simanindo Museum",
+  "description": "A former royal estate of King Sidauruk converted into an open-air museum. It showcases pristine ancestral Bolon houses, heirloom weapons, agricultural tools, and hosts daily Tor-Tor dances accompanied by Gondang music.",
+  "district": "Samosir",
+  "category": "Culture",
+  "latitude": 2.7483,
+  "longitude": 98.7523,
+  "openingHours": "08:30 - 17:00",
+  "ticketPrice": 25000,
+  "image": "https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.6,
+  "facilities": [
+    "Folk Museum",
+    "Tor-Tor Performance",
+    "Arts Gallery",
+    "Toilets",
+    "Handicraft Shops"
+  ]
+}

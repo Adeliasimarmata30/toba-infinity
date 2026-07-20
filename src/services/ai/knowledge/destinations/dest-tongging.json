@@ -1,0 +1,19 @@
+{
+  "id": "dest-tongging",
+  "name": "Desa Wisata Tongging",
+  "description": "A tranquil agricultural lakeside village settled directly below the northern hills. Famous for its scenic rice terraces, fresh tilapia aquaculture fish cages, and a relaxed, laidback rural escape.",
+  "district": "Karo",
+  "category": "Nature",
+  "latitude": 2.9101,
+  "longitude": 98.5304,
+  "openingHours": "24 Hours",
+  "ticketPrice": 5000,
+  "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.5,
+  "facilities": [
+    "Lakeside Restaurants",
+    "Tilapia Fishing",
+    "Local Lodging",
+    "Farm Tours"
+  ]
+}

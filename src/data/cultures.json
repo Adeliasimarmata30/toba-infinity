@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cult-dalihan",
+    "title": "Dalihan Na Tolu",
+    "description": "The fundamental kinship and social philosophy that governs all interpersonal relationships and ceremonies within the Batak society.",
+    "detailedContent": "Dalihan Na Tolu translates literally to \"The Three-Legged Hearth,\" referring to the three stones supporting a traditional cooking pot. If one leg is broken or uneven, the pot will tip over. Similarly, Batak society relies on three distinct social relationships:\n\n1. **Somba Marhula-hula** (Honor the Wife-Givers): The Hula-hula are the clan from whom a family received their wives. They are viewed as the source of blessing, vitality, and custom power, and must be treated with supreme respect.\n2. **Elek Marboru** (Be Kind and Gentle to the Wife-Takers): The Boru are the family members who married daughters of the clan. They act as the loyal hands, organizers, and executors of all family events, and must be treated with gentle kindness and appreciation.\n3. **Manat Mardongan Tubu** (Be Prudent with Male Siblings/Agmates): Dongan Tubu are paternal brothers and brothers-in-clan. Because of equal inheritance and standing, relationships can easily spark friction, demanding constant prudence, polite speech, and cooperation.\n\nThis philosophy establishes an elegant, self-regulating social matrix where no person is permanently superior or inferior; in one ceremony a man is a respected Hula-hula, while in another he acts as a hard-working Boru.",
+    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=800&auto=format&fit=crop",
+    "category": "philosophy"
+  },
+  {
+    "id": "cult-script",
+    "title": "Surat Batak (The Batak Script)",
+    "description": "The ancient pre-colonial abugida writing system of the Batak people, traditionally carved into bamboo tubes and bark books (Pustaha).",
+    "detailedContent": "The Batak Script, locally called \"Surat Batak,\" is an ancient abugida writing system derived from the Pallava and Kawi scripts of southern India, dating back centuries. \n\nIt consists of 19 basic characters (Ina ni Surat) which carry an inherent 'a' vowel. To change the vowel sound to 'i', 'u', 'e', or 'o', or to mute the vowel entirely, small diacritical marks (Anak ni Surat) are attached above, below, or beside the main character.\n\nUnlike many civilizations where writing was limited to administrative scribes, Surat Batak was heavily used by tribal shamans (Datu) to write the \"Pustaha Laklak\"—sacred accordion-folded books made of wild alim tree bark. These books stored ancestral knowledge on star-gazing calendars, healing herbal medicine recipes, astrology, and spiritual protection mantras. Today, it stands as a cherished symbol of Batak intellectual heritage.",
+    "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=800&auto=format&fit=crop",
+    "category": "script"
+  },
+  {
+    "id": "cult-ulos",
+    "title": "Ulos (Ancestral Handwoven Fabric)",
+    "description": "The sacred, handwoven textile of the Batak people that represents warmth, social binding, and spiritual blessing.",
+    "detailedContent": "Ulos is much more than a traditional garment; it is a sacred, living vessel of blessing and spiritual warmth. Traditionally handwoven on backstrap looms over weeks of careful work, Ulos uses red, black, and white threads, embellished with gold or silver beads and complex ikat patterns.\n\nAccording to Batak mythology, there are three primary sources of life-giving warmth: the Sun, Fire, and Ulos. Since the highlands of Toba are cold, Ulos was gifted by ancestors to provide physical warmth and spiritual protection.\n\nEach Ulos has a strictly defined spiritual meaning and social context:\n- **Ulos Ragidup**: The \"Pattern of Life.\" It is the most sacred Ulos, gifted by the bride's parents to the groom's mother to bind the two clans together.\n- **Ulos Sadum**: A vibrant, brightly colored Ulos representing joy and celebration, wrapped around children or performers during festive dances.\n- **Ulos Ragi Hotang**: The \"Rattan Pattern,\" given to newlyweds to symbolize a bond as strong and flexible as rattan.\n\nUlos must be ceremonially draped over a person's shoulders (\"Mangulosi\") solely by individuals of a senior kinship class (such as Hula-hula) to convey authentic blessings of health, prosperity, and protection.",
+    "image": "https://images.unsplash.com/photo-1621886292650-520f76c747d6?q=80&w=800&auto=format&fit=crop",
+    "category": "craft"
+  },
+  {
+    "id": "cult-tortor",
+    "title": "Tor-Tor Dance",
+    "description": "The ancestral, highly expressive ceremonial dance of the Batak people, characterized by controlled rhythmic hand movements.",
+    "detailedContent": "Tor-Tor is the ancient ceremonial dance of the Batak, dating back to pre-Hindu animistic eras. The word \"Tor-Tor\" imitates the deep, rhythmic thumping sound of dancing feet on the wooden floorboards of traditional houses.\n\nRather than featuring athletic jumps, Tor-Tor focuses on fluid, highly controlled movements of the hands, fingers, and shoulders. The palms are rotated outwards and moved up and down to match the beat of the Gondang Sabangunan drum ensemble.\n\nDuring Tor-Tor, dancers wear their finest traditional garments and Ulos drape. Every movement is a form of communication:\n- Palms facing down represent blessing, security, and humbling of the self.\n- Hands raised to shoulder level represent communication with ancestors and gods.\n\nTor-Tor is not danced for amusement; it is a solemn medium of custom exchange where descendants pay respects to parents, royal ancestors, and the community.",
+    "image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=800&auto=format&fit=crop",
+    "category": "art"
+  },
+  {
+    "id": "cult-gondang",
+    "title": "Gondang Sabangunan (The Batak Orchestra)",
+    "description": "The sacred musical ensemble of the Batak, consisting of tuned drums, hanging gongs, and a piercing woodwind oboe.",
+    "detailedContent": "Gondang Sabangunan is the sacred, highly complex musical orchestra of the Batak Toba. It is an ensemble of tuned percussion and woodwinds traditionally played to summon spirits, solemnize marriages, and open customary councils.\n\nThe ensemble consists of:\n1. **Gordang**: A set of large wooden drums made of jackfruit wood and cowhide, delivering deep, resonant bass beats.\n2. **Taganing**: A set of five finely tuned single-headed drums hung on a frame, played with wooden sticks to carry the primary melodic rhythm.\n3. **Ogung**: A set of four heavy bronze hanging gongs providing syncopated micro-tonal accents.\n4. **Sarune Bolon**: A piercing double-reed oboe that carries the crying, mesmerizing lead melody.\n\nIn Batak philosophy, the Gondang is a physical bridge between the physical world (Banua Tonga) and the divine spiritual realm (Banua Ginjand). The continuous, hypnotic polyrhythms are designed to evoke spiritual transcendence and community focus.",
+    "image": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=800&auto=format&fit=crop",
+    "category": "art"
+  },
+  {
+    "id": "cult-houses",
+    "title": "Ruma Bolon (Batak Traditional House)",
+    "description": "The monumental, ship-like wooden houses of the Batak people built entirely without nails, symbolizing the three realms of the universe.",
+    "detailedContent": "Ruma Bolon is the majestic traditional house of the Toba Batak. Characterized by its soaring, saddle-backed boat-shaped roof, the house represents a massive ship navigating the seas of life, designed to withstand earthquakes without a single metal nail.\n\nThe house is built on sturdy wooden stilts resting on flat stone foundations, using intricate mortise-and-tenon joints secured by rattan ropes.\n\nArchitecturally, Ruma Bolon is divided vertically into three distinct tiers, reflecting the Batak cosmic view:\n1. **The Under-house (Bara)**: The dark space beneath the floorboards where livestock was kept. It represents \"Banua Toru\"—the chaotic underworld of spirits and beasts.\n2. **The Living Quarters (Tonga)**: The open, communal main hall where human families cooked, slept, and worked. It represents \"Banua Tonga\"—the active middle world of humans.\n3. **The Attic (Sabu)**: The high, dusty space below the thatched roof where sacred family heirlooms, masks, and seeds were stored. It represents \"Banua Ginjand\"—the celestial upper world of gods and ancestors.\n\nThe facade of Ruma Bolon is heavily decorated with \"Gorga\"—intricate red, black, and white woodcarvings depicting swirling vines, protective animal eyes, and lizards representing patience and earthbound resilience.",
+    "image": "https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?q=80&w=800&auto=format&fit=crop",
+    "category": "craft"
+  }
+]

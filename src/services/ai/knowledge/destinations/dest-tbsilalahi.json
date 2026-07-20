@@ -1,0 +1,21 @@
+{
+  "id": "dest-tbsilalahi",
+  "name": "TB Silalahi Center",
+  "description": "A modern, grand museum complex built to preserve Batak cultural values. Features military history archives, life-sized displays of all six Batak sub-tribes, historical relics, and a scale-model replicas village.",
+  "district": "Toba",
+  "category": "Culture",
+  "latitude": 2.3391,
+  "longitude": 99.0559,
+  "openingHours": "08:00 - 17:00",
+  "ticketPrice": 30000,
+  "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.8,
+  "facilities": [
+    "Batak Art Museum",
+    "Military Museum",
+    "Souvenir Shop",
+    "Food Court",
+    "Playground",
+    "Spacious Parking"
+  ]
+}

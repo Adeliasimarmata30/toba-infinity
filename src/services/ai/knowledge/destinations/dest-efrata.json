@@ -1,0 +1,20 @@
+{
+  "id": "dest-efrata",
+  "name": "Air Terjun Efrata",
+  "description": "A striking, wide curtain-style waterfall that cascades over a smooth 20-meter vertical black rock wall, surrounded by pristine lush agricultural fields and towering hills on the path to Samosir.",
+  "district": "Samosir",
+  "category": "Nature",
+  "latitude": 2.5855,
+  "longitude": 98.6186,
+  "openingHours": "06:00 - 18:00",
+  "ticketPrice": 10000,
+  "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.6,
+  "facilities": [
+    "Washing Chambers",
+    "Toilets",
+    "Parking Site",
+    "Paved Walking Trails",
+    "Picnic Spot"
+  ]
+}

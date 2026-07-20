@@ -1,0 +1,21 @@
+{
+  "id": "dest-hutaraja",
+  "name": "Kampung Ulos Hutaraja",
+  "description": "Kampung Ulos Hutaraja di Simanindo, Samosir adalah salah satu desa adat terbaik yang melestarikan warisan seni tenun kain Ulos Batak secara turun-temurun sejak ratusan tahun silam. Wisatawan dapat menyaksikan langsung para perajin wanita menenun ulos menggunakan alat tenun gedogan kayu tradisional, berinteraksi di bawah bayang-bayang Ruma Bolon adat asli yang indah, dan membeli suvenir tenun otentik.",
+  "district": "Samosir",
+  "category": "Culture",
+  "latitude": 2.5954,
+  "longitude": 98.7423,
+  "openingHours": "08:00 WIB - 18:00 WIB",
+  "ticketPrice": 10000,
+  "image": "https://images.unsplash.com/photo-1621886292650-520f76c747d6?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.9,
+  "facilities": [
+    "Weaving Workshop Tour",
+    "Handicraft Souvenir Shops",
+    "Historic Ruma Bolon Houses",
+    "Local Home Guides",
+    "Worship Room",
+    "Clean Toilets"
+  ]
+}

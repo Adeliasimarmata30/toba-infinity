@@ -1,0 +1,6 @@
+{
+  "name": "Toba Infinity",
+  "description": "AI-powered Smart Tourism platform for Toba Caldera UNESCO Global Geopark",
+  "requestFramePermissions": ["geolocation", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

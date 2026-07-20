@@ -1,0 +1,20 @@
+{
+  "id": "dest-holbung",
+  "name": "Bukit Holbung",
+  "description": "A breathtaking rolling grassland hill offering 360-degree panoramic views of Lake Toba and the Samosir island landscape. Known colloquially as \"Teletubbies Hill,\" it is a popular spot for camping, trekking, and watching ethereal sunrises.",
+  "district": "Samosir",
+  "category": "Nature",
+  "latitude": 2.5683,
+  "longitude": 98.6345,
+  "openingHours": "24 Hours",
+  "ticketPrice": 10000,
+  "image": "https://images.unsplash.com/photo-1594568284297-7c64464062b1?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.8,
+  "facilities": [
+    "Parking Lot",
+    "Toilets",
+    "Food Stalls",
+    "Camping Ground",
+    "Photo Spots"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dest-kulikiparalayang",
+  "name": "Kuliki Paralayang di Tongging",
+  "category": "Adventure",
+  "district": "Karo",
+  "description": "Kuliki Paralayang Karo, berada di desa Tongging merupakan wisata olahraga terbang bebas yang menggunakan parasut dengan memanfaatkan angin serta lepas landas dengan kaki.",
+  "ticketPrice": 900000,
+  "openingHours": "09:00 WIB - 17:00 WIB",
+  "facilities": ["Tandem Paragliding", "Certified Pilot", "Safety Gear", "Insurance", "Photo & Video service", "Rest Area"],
+  "latitude": 2.9101,
+  "longitude": 98.5304,
+  "story": "Pemanfaatan daerah dataran tinggi disertai pemandangan bukit indah yang dikelilingi Danau Toba membuat daerah ini menjadi destinasi yang menawarkan banyak sekali daya tarik pariwisata di Sumatera Utara."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dest-atvsidamanik",
+  "name": "ATV di Kebun Teh Sidamanik",
+  "category": "Adventure",
+  "district": "Simalungun",
+  "description": "Pengelola wisata Kebun Teh Sidamanik, Kecamatan Sidamanik, Kabupaten Simalungun kini menyeediakan motor ATV (All Terrain Vehicle) untuk hiburan bagi pengunjung. ATV digunakan berkeliling kebun sambil menikmati pemandangan indah teh dan hembusan udara sejuk.",
+  "ticketPrice": 50000,
+  "openingHours": "08:00 WIB - 17:00 WIB",
+  "facilities": ["ATV Rental", "Safety Helmet", "Tea Garden Trails", "Local Guides", "Parking Lot"],
+  "latitude": 2.9234,
+  "longitude": 99.0432,
+  "story": "Perkebunan Teh Bah Butong Sidamanik merupakan warisan kolonial yang masih aktif berproduksi hingga saat ini, memberikan pemandangan hijau meliuk-liuk yang menyegarkan mata."
+}

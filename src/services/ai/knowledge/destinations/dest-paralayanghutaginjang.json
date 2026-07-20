@@ -1,0 +1,21 @@
+{
+  "id": "dest-paralayanghutaginjang",
+  "name": "Paralayang Huta Ginjang",
+  "description": "Terletak di Kecamatan Muara, Tapanuli Utara pada ketinggian 1500 mdpl, Puncak Huta Ginjang diakui sebagai salah satu spot paralayang terbaik di Asia Tenggara karena memiliki kekuatan hembusan angin yang sangat ideal. Meluncur dari sini menyajikan sensasi terbang melintasi langit biru berlatar endapan vulkanik muda kaldera, Pulau Sibandang, dan jajaran bukit pinus.",
+  "district": "North Tapanuli",
+  "category": "Adventure",
+  "latitude": 2.2741,
+  "longitude": 98.8953,
+  "openingHours": "08:00 WIB - 18:00 WIB",
+  "ticketPrice": 500000,
+  "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.9,
+  "facilities": [
+    "Tandem Flights",
+    "Professional Flight Instructors",
+    "Telescope Viewing Deck",
+    "Pine Forest Hiking Trails",
+    "Food Court",
+    "Worship Room"
+  ]
+}

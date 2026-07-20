@@ -1,0 +1,22 @@
+{
+  "id": "cul-miegomak",
+  "name": "Mie Gomak",
+  "category": "Kuliner Khas Toba",
+  "description": "Mie Gomak adalah hidangan mie tradisional khas suku Batak Toba yang sering disebut sebagai 'Spaghetti Batak'. Dibuat dari mie lidi (mie kering kuning berbentuk silinder tebal) yang kenyal, disajikan dengan kuah santan gurih beraroma kental andaliman, atau digoreng kering.",
+  "history": "Nama 'Gomak' secara harfiah berarti 'digenggam' atau 'diambil dengan tangan' dalam bahasa Batak Toba, merujuk pada kebiasaan penjual mie masa lampau yang meracik porsi mie langsung menggunakan jemari tangan.",
+  "ingredients": [
+    "Mie Lidi Kuning",
+    "Santan Kelapa Segar",
+    "Andaliman (Merica Batak)",
+    "Bawang Batak (Lokio)",
+    "Serai, Jahe, Lengkuas, Kunyit",
+    "Cabai Merah, Bawang Merah, Bawang Putih",
+    "Sayur Kol dan Sawi"
+  ],
+  "preparation": [
+    "Rebus mie lidi kuning dalam air mendidih hingga matang kenyal (al dente), tiriskan lalu beri sedikit minyak.",
+    "Haluskan bumbu (bawang merah, bawang putih, cabai, kemiri, kunyit, jahe, lengkuas). Sauté bumbu halus bersama serai dan daun jeruk hingga harum.",
+    "Tuangkan santan, aduk rata agar santan tidak pecah. Masukkan andaliman yang sudah digerus halus untuk memberi sensasi rasa getir getir pedas-getir khas.",
+    "Tambahkan sayuran kol, garam, penyedap rasa secukupnya. Siram kuah santan kuning kental di atas mie lidi panas saat disajikan."
+  ]
+}

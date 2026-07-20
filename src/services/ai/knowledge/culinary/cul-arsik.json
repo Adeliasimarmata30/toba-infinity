@@ -1,0 +1,32 @@
+{
+  "id": "cul-arsik",
+  "name": "Arsik Dengke Mas",
+  "description": "The absolute signature cultural dish of the Batak people. It features fresh gold fish (Mas) simmered in a complex paste of indigenous spices, specifically andaliman peppercorns and kincong.",
+  "history": "Traditionally served during sacred life-cycle ceremonies (weddings, births, achievements) to represent long life, health, and familial harmony.",
+  "ingredients": [
+    "Fresh Gold Fish (Ikan Mas)",
+    "Andaliman (Batak Peppercorns)",
+    "Asam Cikala (Torch Ginger Fruit)",
+    "Bunga Kecombrang (Torch Ginger Bud)",
+    "Bawang Batak (Chives)",
+    "Turmeric, Ginger, Galangal, Garlic"
+  ],
+  "preparation": [
+    "Clean the gold fish, leaving the scales intact representing armor/strength.",
+    "Blend turmeric, ginger, chili, garlic, shallot, and lots of andaliman to form a thick golden spice paste.",
+    "Line the bottom of a wok with layers of fresh galangal, lemongrass, torch ginger, and Batak chives.",
+    "Lay the fish on top, rubbing it with the spice paste.",
+    "Add water and simmer slowly on low fire until the broth thickens and turns into a rich, aromatic golden glaze."
+  ],
+  "recommendedLocations": [
+    {
+      "name": "Rumah Makan Nasional Balige",
+      "address": "Jl. Sisingamangaraja No. 22, Balige"
+    },
+    {
+      "name": "RM Silindung Samosir",
+      "address": "Jl. Tuk Tuk, Tuk Tuk Siadong, Samosir"
+    }
+  ],
+  "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=800&auto=format&fit=crop"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "cul-saksang",
+  "name": "Saksang Batak",
+  "description": "A savory, intensely spiced signature Batak pork or beef dish stewed in a rich paste of lemongrass, lime leaves, and an optional traditional thick blood sauce or coconut cream.",
+  "history": "A foundational staple for all major Batak clan gatherings, traditional weddings, and custom councils, representing community solidarity and hospitality.",
+  "ingredients": [
+    "Pork or Beef (cubed)",
+    "Andaliman Peppercorn",
+    "Lemongrass, Lime leaves, Turmeric leaves",
+    "Spices (shallot, garlic, chili, ginger)",
+    "Fresh Blood or thick coconut cream glaze"
+  ],
+  "preparation": [
+    "Dice the meat into small bite-sized cubes.",
+    "Roast and dry grind coriander, pepper, candle-nuts, and andaliman.",
+    "Sauté the ground aromatics along with crushed lemongrass, lime leaves, and turmeric leaves.",
+    "Stir in the cubed meat, cooking until it releases its natural juices.",
+    "Add water and simmer until tender. In the final minutes, stir in filtered blood or thick spiced coconut milk to glaze the meat into a dark, highly savory sauce."
+  ],
+  "recommendedLocations": [
+    {
+      "name": "Lapo Niagara Parapat",
+      "address": "Jl. Niagara No. 12, Parapat"
+    },
+    {
+      "name": "RM Sinar Tuk Tuk",
+      "address": "Jl. Tuk Tuk, Tuk Tuk, Samosir"
+    }
+  ],
+  "image": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop"
+}

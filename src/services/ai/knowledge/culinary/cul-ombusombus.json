@@ -1,0 +1,27 @@
+{
+  "id": "cul-ombusombus",
+  "name": "Kue Ombus-Ombus",
+  "description": "A highly delightful, sweet snack consisting of freshly steamed rice-flour dough stuffed with warm, melting palm sugar and wrapped in fragrant banana leaves.",
+  "history": "Originating from Siborongborong, North Tapanuli, \"Ombus\" means \"to blow on/huff.\" They are served piping hot, forcing you to blow on them before taking a sweet, steaming bite.",
+  "ingredients": [
+    "Rice Flour (Tepung Beras)",
+    "Grated Fresh Coconut (Kelapa Parut)",
+    "Gula Merah / Palm Sugar (shaved)",
+    "Pandan leaf water, Salt",
+    "Fresh Banana Leaves"
+  ],
+  "preparation": [
+    "In a large mixing bowl, gently combine rice flour, salt, and freshly grated coconut.",
+    "Slowly moisten the flour mixture with a dash of pandan leaf water to form a crumbly dough.",
+    "Cut banana leaves into squares and roll into small cones.",
+    "Fill half of the cone with the flour mixture, place a generous spoonful of shaved palm sugar in the center, and cover with more flour.",
+    "Fold the cone securely and steam for 20-30 minutes until the sugar inside melts into syrup."
+  ],
+  "recommendedLocations": [
+    {
+      "name": "Kue Ombus-Ombus No. 1 Noer",
+      "address": "Jl. Sisingamangaraja, Siborong-Borong, North Tapanuli"
+    }
+  ],
+  "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=800&auto=format&fit=crop"
+}

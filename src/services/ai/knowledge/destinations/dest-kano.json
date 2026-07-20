@@ -1,0 +1,20 @@
+{
+  "id": "dest-kano",
+  "name": "Permainan Kano Pantai Bulbul",
+  "description": "Aktivitas rekreasi air seru menggunakan perahu kano ringan berkapasitas maksimal dua orang di sepanjang pesisir Pantai Pasir Putih Lumban Bulbul, Balige. Mengayuh kano di atas jernihnya air Danau Toba yang tenang sambil menikmati tiupan angin sepoi-sepoi pegunungan adalah pengalaman santai yang ramah keluarga.",
+  "district": "Toba",
+  "category": "Adventure",
+  "latitude": 2.3486,
+  "longitude": 99.0851,
+  "openingHours": "08:00 WIB - 18:00 WIB",
+  "ticketPrice": 50000,
+  "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.5,
+  "facilities": [
+    "Canoe Rental",
+    "Life Jackets",
+    "Safety Instructors",
+    "Beach Gazebos",
+    "Toilets"
+  ]
+}

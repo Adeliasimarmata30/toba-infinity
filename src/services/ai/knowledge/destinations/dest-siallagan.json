@@ -1,0 +1,20 @@
+{
+  "id": "dest-siallagan",
+  "name": "Huta Siallagan",
+  "description": "An ancient Batak stone village on Samosir Island that preserves the iconic stone chairs (\"Batu Persidangan\") where the Siallagan kings held council and trials, featuring authentic, towering Batak Bolon houses.",
+  "district": "Samosir",
+  "category": "Culture",
+  "latitude": 2.6806,
+  "longitude": 98.8658,
+  "openingHours": "08:00 - 18:00",
+  "ticketPrice": 20000,
+  "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.7,
+  "facilities": [
+    "Information Center",
+    "Tour Guide",
+    "Toilets",
+    "Souvenir Shops",
+    "Batak Traditional Costumes"
+  ]
+}

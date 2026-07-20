@@ -1,0 +1,21 @@
+{
+  "id": "dest-sipinsur",
+  "name": "Geosite Sipinsur",
+  "description": "A gorgeous 2-hectare pine forest park seated on a high cliff ridge. Known as the Geosite Sipinsur, it offers spectacular, mist-shrouded viewpoints facing directly down toward Samosir and Muara Bay.",
+  "district": "Humbang Hasundutan",
+  "category": "Nature",
+  "latitude": 2.3503,
+  "longitude": 98.8156,
+  "openingHours": "07:00 - 18:00",
+  "ticketPrice": 10000,
+  "image": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.7,
+  "facilities": [
+    "Pine Forest Trekking",
+    "Kids Playground",
+    "Viewing Decks",
+    "Camping Spot",
+    "Food Court",
+    "Clean Bathrooms"
+  ]
+}

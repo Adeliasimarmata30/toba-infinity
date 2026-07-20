@@ -1,0 +1,23 @@
+[
+  {
+    "id": "fest-toba-caldera",
+    "name": "Festival Danau Toba (FDT)",
+    "description": "An annual tourism and cultural extravaganza celebrating the cultural heritage of the Batak people and the natural majesty of the Lake Toba Geopark. It features traditional sport boat races (Sopo), Tor-Tor dance competitions, fashion shows of Ulos fabric, and music concerts on the lake.",
+    "date": "Usually in December",
+    "category": "festival"
+  },
+  {
+    "id": "fest-rondang-bittang",
+    "name": "Pesta Rondang Bittang",
+    "description": "A Simalungun Batak festival of gratitude celebrating the harvest under the full moon. It includes traditional Simalungun arts, music, dance performances, and community games.",
+    "date": "Post-harvest season",
+    "category": "festival"
+  },
+  {
+    "id": "fest-samosir-music",
+    "name": "Samosir Music International",
+    "description": "A major lakeside music festival on Samosir Island that combines local Batak folk music with international musicians, promoting Lake Toba as a global tourism destination through the power of world music.",
+    "date": "August",
+    "category": "festival"
+  }
+]

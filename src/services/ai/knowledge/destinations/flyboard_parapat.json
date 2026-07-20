@@ -1,0 +1,13 @@
+{
+  "id": "dest-flyboard",
+  "name": "Flyboard di Parapat",
+  "category": "Adventure",
+  "district": "Simalungun",
+  "description": "Flyboard adalah wahana air terbaru yang tersedia di Danau Toba, memungkinkan pengguna untuk melayang di atas air dengan bantuan jet air bertekanan tinggi. Wahana ini merupakan atraksi yang sedang populer di kalangan wisatawan yang gemar menguji adrenalin.",
+  "ticketPrice": 250000,
+  "openingHours": "09.00 WIB - 17.00 WIB",
+  "facilities": ["Flyboard Gear", "Safety Helmet", "Life Jacket", "Certified Instructor", "Lakeside Deck"],
+  "latitude": 2.6625,
+  "longitude": 98.9372,
+  "story": "Flyboard di Parapat memanfaatkan teknologi water jet modern yang disokong oleh mesin jetski bertenaga tinggi untuk memberikan atraksi terbang di atas tenangnya air Danau Toba."
+}

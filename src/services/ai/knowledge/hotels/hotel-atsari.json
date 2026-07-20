@@ -1,0 +1,19 @@
+{
+  "id": "hotel-atsari",
+  "name": "Atsari Hotel Parapat",
+  "description": "A cozy, exceptionally green plant-filled modern hotel located in the heart of Parapat town. Within minutes from transit harbors, it features beautiful garden courtyards and outstanding hospitality.",
+  "rating": 4.3,
+  "facilities": [
+    "Lush Inner Gardens",
+    "Sky Cafe",
+    "Free Wi-Fi",
+    "Coffee Maker",
+    "Hot Shower",
+    "Conference Rooms"
+  ],
+  "priceRange": "Rp 450.000 - Rp 850.000",
+  "district": "Simalungun",
+  "latitude": 2.6587,
+  "longitude": 98.9391,
+  "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=800&auto=format&fit=crop"
+}

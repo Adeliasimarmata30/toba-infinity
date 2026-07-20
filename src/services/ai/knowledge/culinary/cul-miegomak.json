@@ -1,0 +1,31 @@
+{
+  "id": "cul-miegomak",
+  "name": "Mie Gomak",
+  "description": "The beloved \"Spaghetti of the Bataks.\" Made using thick, chewy local wheat noodles called Mie Lidi, it is bathed in a fragrant, spicy andaliman-scented coconut curry broth, or stir-fried dry.",
+  "history": "The name \"Gomak\" translates literally to \"by hand,\" tracing back to the traditional method where street vendors would grab and portion the hot noodles using their hands before serving.",
+  "ingredients": [
+    "Mie Lidi (Thick yellow dried wheat noodles)",
+    "Coconut Milk",
+    "Andaliman Peppercorns",
+    "Shallots, Garlic, Chilies, Ginger",
+    "Cabbage and Mustard greens"
+  ],
+  "preparation": [
+    "Boil the thick Mie Lidi in rolling hot water until perfectly al dente, drain and coat with a dash of oil.",
+    "Sauté blended spices including shallots, garlic, turmeric, and dried chili until aromatic.",
+    "Pour in fresh coconut milk and stir constantly to prevent separation.",
+    "Add crushed andaliman, which delivers a distinct citrusy numbing sensation to the tongue.",
+    "Add greens, then serve the noodles bathed in the thick, piping hot yellow-red curry broth."
+  ],
+  "recommendedLocations": [
+    {
+      "name": "Warung Mie Gomak Mak Tina",
+      "address": "Pusat Pasar Balige, Balige"
+    },
+    {
+      "name": "Mie Gomak Tuk Tuk",
+      "address": "Jl. Ring Road Samosir, Tuk Tuk"
+    }
+  ],
+  "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=800&auto=format&fit=crop"
+}

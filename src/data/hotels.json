@@ -1,0 +1,98 @@
+[
+  {
+    "id": "hotel-labersa",
+    "name": "Labersa Hotel & Convention Balige",
+    "description": "A 4-star premium luxury hotel in Balige featuring comprehensive convention centers, elegant architectural accents, a large themed waterpark, and dynamic views overlooking the southern shores of the lake.",
+    "rating": 4.7,
+    "facilities": ["Theme Waterpark", "Free Wi-Fi", "Swimming Pool", "Meeting Rooms", "Gym & Fitness Center", "Restaurant & Lounge"],
+    "priceRange": "Rp 900.000 - Rp 2.100.000",
+    "district": "Toba",
+    "latitude": 2.3456,
+    "longitude": 99.0723,
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": "hotel-tiarabunga",
+    "name": "Tiara Bunga Hotel & Villa",
+    "description": "An idyllic, secluded resort accessible only by boat. Settled right on a private lakeshore peninsula, it provides ultimate tranquility, romantic lakeside dining, and lush mountain-backed villas.",
+    "rating": 4.5,
+    "facilities": ["Private Beach Side", "Boat Transport Service", "Lakeside Pool", "Restaurant", "Fishing Spots", "Water Sports"],
+    "priceRange": "Rp 650.000 - Rp 1.400.000",
+    "district": "Toba",
+    "latitude": 2.4011,
+    "longitude": 99.0221,
+    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": "hotel-marianna",
+    "name": "Marianna Resort & Convention",
+    "description": "The first premium 5-star international standard resort on Samosir Island. Marianna features sprawling modern villas, a spectacular infinity pool overlooking the caldera, and comprehensive luxury spa treatments.",
+    "rating": 4.9,
+    "facilities": ["Infinity Pool", "World-Class Spa", "Lakeside Cabanas", "Fitness Center", "Kids Club", "Fine Dining Restaurant", "High-Speed Wi-Fi"],
+    "priceRange": "Rp 1.800.000 - Rp 5.000.000",
+    "district": "Samosir",
+    "latitude": 2.6712,
+    "longitude": 98.8541,
+    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": "hotel-atsari",
+    "name": "Atsari Hotel Parapat",
+    "description": "A cozy, exceptionally green plant-filled modern hotel located in the heart of Parapat town. Within minutes from transit harbors, it features beautiful garden courtyards and outstanding hospitality.",
+    "rating": 4.3,
+    "facilities": ["Lush Inner Gardens", "Sky Cafe", "Free Wi-Fi", "Coffee Maker", "Hot Shower", "Conference Rooms"],
+    "priceRange": "Rp 450.000 - Rp 850.000",
+    "district": "Simalungun",
+    "latitude": 2.6587,
+    "longitude": 98.9391,
+    "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": "hotel-niagara",
+    "name": "Niagara Hotel & Resort Parapat",
+    "description": "Perched high on a hilltop, Niagara Hotel offers arguably the most classic, majestic bird-eye panorama of the caldera. It is a massive legacy resort featuring expansive grounds, golf, and multiple pools.",
+    "rating": 4.5,
+    "facilities": ["Hilltop Pools", "Golf Course Links", "Tennis Courts", "Jogging Track", "Family playground", "Traditional Buffet Restaurant"],
+    "priceRange": "Rp 750.000 - Rp 1.900.000",
+    "district": "Simalungun",
+    "latitude": 2.6701,
+    "longitude": 98.9412,
+    "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": "hotel-tobavillage",
+    "name": "Toba Village Inn Samosir",
+    "description": "A quaint, highly charming German-Indonesian boutique lodge seated peacefully on Samosir Island shores. Known for its cozy home-like feel, gorgeous pool, and excellent organic fusion restaurant.",
+    "rating": 4.6,
+    "facilities": ["Lakeside Swim Pool", "Direct Beach Access", "Organic Garden Cafe", "Free Wi-Fi", "Bicycle Rentals"],
+    "priceRange": "Rp 500.000 - Rp 1.100.000",
+    "district": "Samosir",
+    "latitude": 2.6791,
+    "longitude": 98.8456,
+    "image": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": "hotel-zoes",
+    "name": "Zoe's Paradise Waterfront Hotel",
+    "description": "A stellar, highly-rated waterfront boutique hotel on Samosir Island. Zoe’s focuses on personalized, eco-conscious hospitality, offering modern Swiss-style comfort infused with local Batak wooden arts.",
+    "rating": 4.8,
+    "facilities": ["Eco-friendly Amenities", "Waterfront Pool", "Lake Excursions", "Fresh Bakery", "Free Wi-Fi", "Lakeside Balconies"],
+    "priceRange": "Rp 600.000 - Rp 1.300.000",
+    "district": "Samosir",
+    "latitude": 2.6841,
+    "longitude": 98.8312,
+    "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": "hotel-samosirvilla",
+    "name": "Samosir Villa Resort",
+    "description": "A highly spacious, family-focused resort with modern hotel structures and traditional cottages set directly on Samosir’s Tuk-Tuk peninsula, offering three expansive pools and a vibrant marina.",
+    "rating": 4.4,
+    "facilities": ["Two Large Pools", "Boat Jetty", "Family Billiard Area", "Lakeside Bar & Cafe", "Spacious Gardens", "Hot Showers"],
+    "priceRange": "Rp 550.000 - Rp 1.250.000",
+    "district": "Samosir",
+    "latitude": 2.6749,
+    "longitude": 98.8519,
+    "image": "https://images.unsplash.com/photo-1611891404114-5090bc21c3b7?q=80&w=800&auto=format&fit=crop"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "id": "dest-sibeabea",
+  "name": "Bukit Sibea-bea",
+  "description": "A modern scenic hill on Samosir Island, famous for its magnificent winding asphalt \"eight-turn\" road that scales the cliffside and leads up to a towering 61-meter Jesus Christ Blesses Statue standing as a landmark.",
+  "district": "Samosir",
+  "category": "Family",
+  "latitude": 2.5511,
+  "longitude": 98.6083,
+  "openingHours": "07:00 - 20:00",
+  "ticketPrice": 50000,
+  "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.8,
+  "facilities": [
+    "Monument Observation Deck",
+    "Scenic Highway",
+    "Souvenir Shops",
+    "Restrooms",
+    "Parking Hub",
+    "Photography Spots"
+  ]
+}

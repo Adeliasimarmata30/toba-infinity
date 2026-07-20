@@ -1,0 +1,13 @@
+{
+  "id": "dest-berkudagundaling",
+  "name": "Berkuda di Gundaling",
+  "category": "Family",
+  "district": "Karo",
+  "description": "Berkuda di Gundaling, Berastagi adalah salah satu aktivitas wisata yang populer. Pengunjung dapat menikmati pemandangan alam Bukit Gundaling sambil menunggang kuda, baik sendiri maupun dengan delman. Rute berkuda biasanya dari atas bukit hingga ke Pasar Buah Berastagi.",
+  "ticketPrice": 20000,
+  "openingHours": "08:00 WIB - 17:30 WIB",
+  "facilities": ["Horse Rentals", "Delman / Carriage", "Local Guides", "Fruit Market Access", "Photo Spots"],
+  "latitude": 3.1894,
+  "longitude": 98.5042,
+  "story": "Gundaling merupakan bukit legendaris di Berastagi yang menghadap langsung ke panorama megah Gunung Sinabung dan Gunung Sibayak yang aktif menawan."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "hotel-zoes",
+  "name": "Zoe's Paradise Waterfront Hotel",
+  "description": "A stellar, highly-rated waterfront boutique hotel on Samosir Island. Zoe’s focuses on personalized, eco-conscious hospitality, offering modern Swiss-style comfort infused with local Batak wooden arts.",
+  "rating": 4.8,
+  "facilities": [
+    "Eco-friendly Amenities",
+    "Waterfront Pool",
+    "Lake Excursions",
+    "Fresh Bakery",
+    "Free Wi-Fi",
+    "Lakeside Balconies"
+  ],
+  "priceRange": "Rp 600.000 - Rp 1.300.000",
+  "district": "Samosir",
+  "latitude": 2.6841,
+  "longitude": 98.8312,
+  "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=800&auto=format&fit=crop"
+}

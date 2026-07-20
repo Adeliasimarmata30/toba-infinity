@@ -1,0 +1,21 @@
+{
+  "id": "dest-jumabulu",
+  "name": "Juma Bulu River Side Ajibata",
+  "description": "Juma Bulu River Side Ajibata menawarkan pesona sungai yang sejuk, jernih, dan dikelilingi oleh persawahan hijau nan asri di Desa Pardomuan Ajibata. Objek wisata ini sangat populer dengan aktivitas River Tubing, area berkemah (camping ground) di tepi sungai yang menenangkan, serta jalur tracking menantang menuju Air Terjun Batu Papan yang eksotis.",
+  "district": "Toba",
+  "category": "Nature",
+  "latitude": 2.6105,
+  "longitude": 98.9664,
+  "openingHours": "08:00 WIB - 18:00 WIB",
+  "ticketPrice": 50000,
+  "image": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.6,
+  "facilities": [
+    "River Tubing",
+    "Camping Ground",
+    "Trekking Guide",
+    "Waterfall Access",
+    "Toilets",
+    "Worship Room"
+  ]
+}

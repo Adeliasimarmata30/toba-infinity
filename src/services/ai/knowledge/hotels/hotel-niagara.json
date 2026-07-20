@@ -1,0 +1,19 @@
+{
+  "id": "hotel-niagara",
+  "name": "Niagara Hotel & Resort Parapat",
+  "description": "Perched high on a hilltop, Niagara Hotel offers arguably the most classic, majestic bird-eye panorama of the caldera. It is a massive legacy resort featuring expansive grounds, golf, and multiple pools.",
+  "rating": 4.5,
+  "facilities": [
+    "Hilltop Pools",
+    "Golf Course Links",
+    "Tennis Courts",
+    "Jogging Track",
+    "Family playground",
+    "Traditional Buffet Restaurant"
+  ],
+  "priceRange": "Rp 750.000 - Rp 1.900.000",
+  "district": "Simalungun",
+  "latitude": 2.6701,
+  "longitude": 98.9412,
+  "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800&auto=format&fit=crop"
+}

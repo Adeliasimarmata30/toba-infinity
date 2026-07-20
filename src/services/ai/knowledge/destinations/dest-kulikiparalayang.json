@@ -1,0 +1,20 @@
+{
+  "id": "dest-kulikiparalayang",
+  "name": "Kuliki Paralayang di Tongging",
+  "description": "Wisata olahraga udara prestisius di Desa Wisata Tongging, Kabupaten Karo. Lepas landas dari perbukitan tinggi menggunakan parasut tandem, wisatawan akan melayang bebas memanfaatkan hembusan angin pegunungan yang ideal, disuguhi pemandangan spektakuler Air Terjun Sipiso-piso dari udara, lembah subur Tongging, serta perairan utara Danau Toba yang berkilau.",
+  "district": "Karo",
+  "category": "Adventure",
+  "latitude": 2.9101,
+  "longitude": 98.5304,
+  "openingHours": "09:00 WIB - 17:00 WIB",
+  "ticketPrice": 900000,
+  "image": "https://images.unsplash.com/photo-1594568284297-7c64464062b1?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.9,
+  "facilities": [
+    "Tandem Flight Pilots",
+    "Certified Safety Gear",
+    "Personal Insurance",
+    "GoPro Aerial Video",
+    "Rest Lounge"
+  ]
+}

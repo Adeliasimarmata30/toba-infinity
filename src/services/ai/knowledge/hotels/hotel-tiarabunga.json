@@ -1,0 +1,19 @@
+{
+  "id": "hotel-tiarabunga",
+  "name": "Tiara Bunga Hotel & Villa",
+  "description": "An idyllic, secluded resort accessible only by boat. Settled right on a private lakeshore peninsula, it provides ultimate tranquility, romantic lakeside dining, and lush mountain-backed villas.",
+  "rating": 4.5,
+  "facilities": [
+    "Private Beach Side",
+    "Boat Transport Service",
+    "Lakeside Pool",
+    "Restaurant",
+    "Fishing Spots",
+    "Water Sports"
+  ],
+  "priceRange": "Rp 650.000 - Rp 1.400.000",
+  "district": "Toba",
+  "latitude": 2.4011,
+  "longitude": 99.0221,
+  "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=800&auto=format&fit=crop"
+}

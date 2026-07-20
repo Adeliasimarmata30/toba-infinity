@@ -1,0 +1,19 @@
+{
+  "id": "dest-batukursi",
+  "name": "Batu Kursi Raja Siallagan",
+  "description": "The ritual stone chairs situated deep in Huta Siallagan village. These 200-year-old volcanic tuffs were used for legislative assemblies, legal trials of criminals, and capital punishment executions in tribal times.",
+  "district": "Samosir",
+  "category": "Culture",
+  "latitude": 2.6811,
+  "longitude": 98.866,
+  "openingHours": "08:00 - 18:00",
+  "ticketPrice": 10000,
+  "image": "https://images.unsplash.com/photo-1473163928189-364b2c4e1135?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.7,
+  "facilities": [
+    "Guided Tour",
+    "Information Board",
+    "Photo spots",
+    "Rest Area"
+  ]
+}

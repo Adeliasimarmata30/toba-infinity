@@ -1,0 +1,20 @@
+{
+  "id": "hotel-marianna",
+  "name": "Marianna Resort & Convention",
+  "description": "The first premium 5-star international standard resort on Samosir Island. Marianna features sprawling modern villas, a spectacular infinity pool overlooking the caldera, and comprehensive luxury spa treatments.",
+  "rating": 4.9,
+  "facilities": [
+    "Infinity Pool",
+    "World-Class Spa",
+    "Lakeside Cabanas",
+    "Fitness Center",
+    "Kids Club",
+    "Fine Dining Restaurant",
+    "High-Speed Wi-Fi"
+  ],
+  "priceRange": "Rp 1.800.000 - Rp 5.000.000",
+  "district": "Samosir",
+  "latitude": 2.6712,
+  "longitude": 98.8541,
+  "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop"
+}

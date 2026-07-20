@@ -1,0 +1,21 @@
+{
+  "id": "dest-parapat",
+  "name": "Pantai Bebas Parapat",
+  "description": "The major mainland harbor town and transit beach of Lake Toba, newly modernized with open public squares, clean waterfront pathways, amphitheaters, and continuous ferries heading to Samosir Island.",
+  "district": "Simalungun",
+  "category": "Family",
+  "latitude": 2.6625,
+  "longitude": 98.9372,
+  "openingHours": "24 Hours",
+  "ticketPrice": 0,
+  "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.4,
+  "facilities": [
+    "Lakeside Promenade",
+    "Speedboat Hires",
+    "Amphitheater",
+    "Food Outlets",
+    "Toilets",
+    "Transit Port"
+  ]
+}

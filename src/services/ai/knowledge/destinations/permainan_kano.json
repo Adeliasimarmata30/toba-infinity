@@ -1,0 +1,13 @@
+{
+  "id": "dest-kano",
+  "name": "Permainan Kano Pantai Bulbul",
+  "category": "Adventure",
+  "district": "Toba",
+  "description": "Permainan kano adalah aktivitas rekreasi atau olahraga air yang menggunakan perahu kecil ringan bernama kano, yang digerakkan dengan dayung. Olahraga air ini bisa kamu nikmati di pantai Bulbul Balige dengan maksimal dua orang.",
+  "ticketPrice": 50000,
+  "openingHours": "08:00 WIB - 18:00 WIB",
+  "facilities": ["Canoe Rental", "Life Jackets", "Safety Instructors", "Beach Gazebos", "Toilets"],
+  "latitude": 2.3486,
+  "longitude": 99.0851,
+  "story": "Menikmati kano di pesisir pasir putih Lumban Bulbul Balige memberikan keseruan tak terbatas, terutama saat matahari terbenam atau pagi hari yang tenang."
+}

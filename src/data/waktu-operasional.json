@@ -1,0 +1,402 @@
+[
+  {
+    "NO": 1.0,
+    "KABUPATEN": "TOBA",
+    "OBJEK / DESTINASI WISATA": "Pantai Bulbul",
+    "FASILITAS UMUM": "sanitasi\n Parkir",
+    "FASILITAS PENUNJANG": "tempat ibadah (Gereja HKBP Tiberias Lumban Bulbul)\n Homestay / penginapan\n Resto dan spot kuliner",
+    "ALAMAT": "Lumban Bulbul, Kecamatan Balige",
+    "WAKTU OPERASIONAL": "senin - minggu\n 24 jam\n \n 08.00 - 14.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 2.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Air Terjun Situmurun",
+    "FASILITAS UMUM": "toilet umum",
+    "FASILITAS PENUNJANG": "spot jajan makanan dan minuman\n \n Sewa kapal",
+    "ALAMAT": "Jonggi Nihuta, Hatinggian, Kec. Lumban Julu.",
+    "WAKTU OPERASIONAL": "senin - minggu\n 24 jam\n \n 08.00 - 14.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 3.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Taman Eden 100",
+    "FASILITAS UMUM": "sanitasi\n parkir\n pusat informasi\n tempat bersantai",
+    "FASILITAS PENUNJANG": "cafe shacky house\n homestay\n jalur evakuasi\n spot oleh-oleh kuliner",
+    "ALAMAT": "Desa Lumban Rang Sionggang Utara, Kecamatan Lumban Julu",
+    "WAKTU OPERASIONAL": "senin - minggu\n 08.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 4.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Toba Caldera Resort",
+    "FASILITAS UMUM": "parking area\n mushala\n toilet\n tempat duduk",
+    "FASILITAS PENUNJANG": "Nom Addict Cafe\n Penginapan (Bobocabin)\n Stand UMKM",
+    "ALAMAT": "Desa Pardamean Sibisa, Kecamatan Ajibata",
+    "WAKTU OPERASIONAL": "senin - minggu\n 08.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 5.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Bukit Senyum",
+    "FASILITAS UMUM": "Gazebo\n mushala\n tempat duduk kayu",
+    "FASILITAS PENUNJANG": "warung makanan dan minuman",
+    "ALAMAT": "Desa Motung, Kecamatan Ajibata",
+    "WAKTU OPERASIONAL": "senin - minggu\n 08.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 6.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Bukit Tara Bunga",
+    "FASILITAS UMUM": "parkir\n toilet\n mushala\n gazebo\n pusat informasi",
+    "FASILITAS PENUNJANG": "warung makanan dan / restoran",
+    "ALAMAT": "Lintong Nihuta, Kecamatan Tampahan",
+    "WAKTU OPERASIONAL": "senin - minggu\n 07.00 - 18.30",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 7.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Bukit Pahoda",
+    "FASILITAS UMUM": null,
+    "FASILITAS PENUNJANG": null,
+    "ALAMAT": "Desa Lumban Silitong, Kecamatan Balige",
+    "WAKTU OPERASIONAL": "senin - minggu\n 08.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 8.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Pemandian Bukit Gibeon",
+    "FASILITAS UMUM": "sanitasi\n ruang ganti\n loker\n parking area",
+    "FASILITAS PENUNJANG": "restoran\n tempat ibadah",
+    "ALAMAT": "Desa Parsaoran Sibisa Kecamatan Ajibata",
+    "WAKTU OPERASIONAL": "senin - minggu\n 08.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 9.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Desa Wisata Meat",
+    "FASILITAS UMUM": "parking area",
+    "FASILITAS PENUNJANG": "homestay",
+    "ALAMAT": "Desa Meat, Kecamatan Tampahan",
+    "WAKTU OPERASIONAL": "senin - sabtu\n 08.00 - 16.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 10.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Labersa Toba Fantasi",
+    "FASILITAS UMUM": "Parking area\n ruang ganti\n loker\n gazebo",
+    "FASILITAS PENUNJANG": "restoran",
+    "ALAMAT": "Jl. Pematang Siantar Sariburja Janji Maria, Kecamatan Balige",
+    "WAKTU OPERASIONAL": "senin - minggu\n 09.00 - 23.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 11.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Museum Tb. Silalahi Center",
+    "FASILITAS UMUM": "parkir\n toilet\n ruang terbuka hijau\n pusat informasi",
+    "FASILITAS PENUNJANG": "spot oleh-oleh\n spot jajan\n ruang edukasi",
+    "ALAMAT": "Jl. Dr. TB. Silalahi No.88, Silalahi Pagar Batu, Kec. Balige, Toba, Sumatera Utara",
+    "WAKTU OPERASIONAL": "Selasa - Jumat\n 09.30 - 17.00\n \n Sabtu-Minggu & Hari Libur\n 09.30 - 18.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 12.0,
+    "KABUPATEN": "Humbang Hasundutan",
+    "OBJEK / DESTINASI WISATA": "Geosite Sipinsur",
+    "FASILITAS UMUM": "sanitasi\n parkir\n gazebo",
+    "FASILITAS PENUNJANG": "area bermain anak\n pusat informasi\n stand makanan",
+    "ALAMAT": "Parulohan, Kec. Paranginan",
+    "WAKTU OPERASIONAL": "senin - minggu\n 07.00 - 23.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 13.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Air Terjun Simolap",
+    "FASILITAS UMUM": null,
+    "FASILITAS PENUNJANG": null,
+    "ALAMAT": "Sibongkare, Tara Bintang",
+    "WAKTU OPERASIONAL": "senin-minggu\n 08.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 14.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Panorama Agrowisata Sileme-Leme",
+    "FASILITAS UMUM": "parking area\n gazebo\n toilet\n Mushala",
+    "FASILITAS PENUNJANG": "spot oleh-oleh\n spot kuliner",
+    "ALAMAT": "Desa Sileme-leme, Dusun VII Desa Parsingguran II, Kecamatan Pollung",
+    "WAKTU OPERASIONAL": "senin - minggu\n 08.00 - 17.00 WIB",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 15.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Istana Raja Sisingamangaraja",
+    "FASILITAS UMUM": null,
+    "FASILITAS PENUNJANG": null,
+    "ALAMAT": "Desa Simamora, Kecamatan Bakti Raja",
+    "WAKTU OPERASIONAL": "senin - minggu\n 08.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 16.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Desa Wisata Simangulampe",
+    "FASILITAS UMUM": "parkir\n balai pertemuan\n toilet",
+    "FASILITAS PENUNJANG": "cafetaria",
+    "ALAMAT": "Desa Simangulampe. Kecamatan Baktiraja",
+    "WAKTU OPERASIONAL": "senin - minggu\n 07.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": null,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Desa wisata Tipang",
+    "FASILITAS UMUM": "parkir\n balai pertemuan\n selfie area\n spot foto\n toilet",
+    "FASILITAS PENUNJANG": "homestay tradisional batak\n wifi\n tempat makan\n kios souvenir",
+    "ALAMAT": "Desa Tipang, Kecamatan Baktiraja",
+    "WAKTU OPERASIONAL": "senin - minggu\n 08.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 17.0,
+    "KABUPATEN": "SIMALUNGUN",
+    "OBJEK / DESTINASI WISATA": "Aek Nauli Elephant Conservation Camp",
+    "FASILITAS UMUM": "parkir\n toilet",
+    "FASILITAS PENUNJANG": null,
+    "ALAMAT": "Jl. Lintas Sumatera, Sibaganding, Kecamatan Girsang Sipangan Bolon",
+    "WAKTU OPERASIONAL": "senin - minggu\n 08.00 - 16.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 18.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Kawah Putih Dolok Tinggi Raja",
+    "FASILITAS UMUM": "parkir\n gazebo\n toilet",
+    "FASILITAS PENUNJANG": "warung makanan\n penginapan",
+    "ALAMAT": "Desa Dolok Marawa, Kecamatan Silau Kahean",
+    "WAKTU OPERASIONAL": "senin - minggu\n 06.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 19.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Museum Simalungun",
+    "FASILITAS UMUM": "sanitasi\n parking area\n pusat informasi",
+    "FASILITAS PENUNJANG": "warung makan",
+    "ALAMAT": "Jalan Sudirman Nomor 20, Kelurahan Proklamasi, Kecamatan Siantar Barat,",
+    "WAKTU OPERASIONAL": "senin - minggu\n 08.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 20.0,
+    "KABUPATEN": "SAMOSIR",
+    "OBJEK / DESTINASI WISATA": "Bukit Holbung",
+    "FASILITAS UMUM": "toilet\n area parkir\n Mushala\n tempat sampah terpilah\n papan informasi",
+    "FASILITAS PENUNJANG": "homestay tradisional\n kafe dan warung kopi\n akses ke Pantai Lumban Manik",
+    "ALAMAT": "Dolok Raja, Kecamatan Harian",
+    "WAKTU OPERASIONAL": "senin - minggu\n 24 Jam",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 21.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Desa Wisata Lumban Suhi-Suhi",
+    "FASILITAS UMUM": "parkir\n toilet\n tempat ibadah (Gereja HKBP Lumban Suhi-Suhi)\n pusat informasi",
+    "FASILITAS PENUNJANG": "souvenir shop\n spot kuliner",
+    "ALAMAT": "Desa Lumban Suhi-Suhi Toruan, Kecamatan Pangururan",
+    "WAKTU OPERASIONAL": "senin - minggu\n 08.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": null,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Air terjun Efrata",
+    "FASILITAS UMUM": "papan informasi\n gazebo\n toilet\n parkir\n ruang ganti\n mushala",
+    "FASILITAS PENUNJANG": "UMKM\n souvenir / toko oleh-oleh",
+    "ALAMAT": "Sosor Dolok, Kecamatan. Harian",
+    "WAKTU OPERASIONAL": "senin - minggu\n 06.00 - 19.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": null,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Water Front City Pangururan",
+    "FASILITAS UMUM": "toilet\n tempat duduk\n spot foto\n parkir\n gazebo",
+    "FASILITAS PENUNJANG": "cafe / resto\n homestay\n hotel\n umkm\n toko souvenir / toko oleh-oleh",
+    "ALAMAT": "Pardomuan I , Kecamatan Pangururan",
+    "WAKTU OPERASIONAL": "senin - jumat\n 08.00 - 20.00\n \n sabtu - minggu\n 08.00 - 23.00\n \n pertunjukan air mancur :\n 19.00 / 21.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": null,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Huta Siallagan",
+    "FASILITAS UMUM": "parkir\n toilet\n tempat duduk batu",
+    "FASILITAS PENUNJANG": "souvenir shop\n spot kuliner\n penginapan (homestay)",
+    "ALAMAT": "Desa Siallagan, Kecamatan Simanido",
+    "WAKTU OPERASIONAL": null,
+    "RATING BPODT": null
+  },
+  {
+    "NO": null,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Desa Wisata Tomok",
+    "FASILITAS UMUM": "parkir\n toilet\n mushala\n pusat informasi",
+    "FASILITAS PENUNJANG": "souvenir shop\n pasar tomok\n umkm \n rumah makan / restoran\n penginapan",
+    "ALAMAT": "Desa Tomok, Kecamatan Simanindo",
+    "WAKTU OPERASIONAL": "senin - minggu\n 08.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 22.0,
+    "KABUPATEN": "TAPANULI UTARA",
+    "OBJEK / DESTINASI WISATA": "Kawah Sipoholon",
+    "FASILITAS UMUM": "Parkir\n kamar ganti\n toilet\n gazebo",
+    "FASILITAS PENUNJANG": "kolam renang\n penginapan\n spot kuliner non halal",
+    "ALAMAT": "Jla. Tarutung, Tapian Nauli, Sipoholon",
+    "WAKTU OPERASIONAL": "senin - minggu\n 09.00 - 18.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 23.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Air Terjun Batu Manarus",
+    "FASILITAS UMUM": null,
+    "FASILITAS PENUNJANG": null,
+    "ALAMAT": "Lobutalpe, Hutabarat, kecamatan Pahae Julu",
+    "WAKTU OPERASIONAL": "senin - minggu\n 07.00 - 17.00",
+    "RATING BPODT": "hidden gem"
+  },
+  {
+    "NO": 24.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Huta Ginjang",
+    "FASILITAS UMUM": "parkir\n toilet\n gazebo / saung\n mushala",
+    "FASILITAS PENUNJANG": "warung makanan dan minuman\n panggung hiburan",
+    "ALAMAT": "Desa Dolok Martumbur, Kecamatan Muara",
+    "WAKTU OPERASIONAL": "senin - minggu\n 07.00 - 18.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 25.0,
+    "KABUPATEN": "DAIRI",
+    "OBJEK / DESTINASI WISATA": "Taman Wisata Alam Sicike-Cike\n (Danau Dan Air Terjun Sicike-Cike)",
+    "FASILITAS UMUM": "parkir\n toilet\n mushala\n gazebo",
+    "FASILITAS PENUNJANG": "warung makan\n area piknik",
+    "ALAMAT": "Desa Lae Hole, Kecamatan Parbuluan",
+    "WAKTU OPERASIONAL": "senin - minggu\n 09.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 26.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Panatapan Puncak Sidiangkat",
+    "FASILITAS UMUM": "toilet umum\n parkir\n ATM\n wifi area",
+    "FASILITAS PENUNJANG": "cafetaria\n homestay\n mini garden\n Balai Pertemuan",
+    "ALAMAT": "Jalan Subulussalam- Sidikalang, Kecamatan Sidikalang",
+    "WAKTU OPERASIONAL": "senin - minggu\n 08.00 - 18.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 27.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Bukit Siattaratas",
+    "FASILITAS UMUM": "parkir\n toilet",
+    "FASILITAS PENUNJANG": "warung makanan dan minuman\n persewaan perlengkapan camping\n camping area",
+    "ALAMAT": "Desa Paropo, Kecamatan Silahisabungan",
+    "WAKTU OPERASIONAL": "senin-minggu\n 06.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 28.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Paropo",
+    "FASILITAS UMUM": "parkir\n toilet\n spot wifi",
+    "FASILITAS PENUNJANG": "Balai Pertemuan\n cafetaria\n penginapan\n area perkemahan",
+    "ALAMAT": "Desa Paropo, Kecamatan Silahisabungan",
+    "WAKTU OPERASIONAL": "07.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 29.0,
+    "KABUPATEN": "KARO",
+    "OBJEK / DESTINASI WISATA": "Bukit Gundaling",
+    "FASILITAS UMUM": "parkir\n mushala\n toilet\n gazebo",
+    "FASILITAS PENUNJANG": "cafetaria\n penginapan\n souvenir shop",
+    "ALAMAT": "Jl. Letjen Jamin Ginting, Gundaling I, Berastagi",
+    "WAKTU OPERASIONAL": "senin-minggu\n 06.00 - 18.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 30.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Air Terjun Sipiso-Piso",
+    "FASILITAS UMUM": "parkir\n toilet\n gazebo\n Gereja Katolik",
+    "FASILITAS PENUNJANG": "souvenir shop\n warung makan",
+    "ALAMAT": "Desa Tongging, Kecamatan Merak",
+    "WAKTU OPERASIONAL": "senin-minggu\n 08.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 31.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Danau Lau Kawar",
+    "FASILITAS UMUM": "parkir\n toilet\n tempat ibadah\n pos keamanan",
+    "FASILITAS PENUNJANG": "resto/ cafetaria\n pos kesehatan\n toilet\n penginapan\n guide",
+    "ALAMAT": "Desa Kutagugung, Kecamatan Naman Teran",
+    "WAKTU OPERASIONAL": "senin-minggu\n 08.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 32.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Taman Alam Lumbini",
+    "FASILITAS UMUM": "parkir\n toilet\n gazebo\n pusat informasi",
+    "FASILITAS PENUNJANG": "restoran\n souvenir shop\n area bermain anak\n peralatan fitness",
+    "ALAMAT": "jalan Barusjahe, Dolat Rayat, Kecamatan Dolat Rayat. Di dalam komplek International Buddhiest Center",
+    "WAKTU OPERASIONAL": "senin - minggu\n 09.00 - 17.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 33.0,
+    "KABUPATEN": "PAKPAK BHARAT",
+    "OBJEK / DESTINASI WISATA": "Air Terjun Lae Pinang",
+    "FASILITAS UMUM": null,
+    "FASILITAS PENUNJANG": null,
+    "ALAMAT": "Dusun Lae Pinang, Desa Malum, Kec Sitellu Tali Urang Jehe",
+    "WAKTU OPERASIONAL": "senin - minggu\n 10.00 - 16.00",
+    "RATING BPODT": "hidden gem"
+  },
+  {
+    "NO": 34.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Air Terjun Lae Mbilulu",
+    "FASILITAS UMUM": "toilet umum\n parkir\n Mushala",
+    "FASILITAS PENUNJANG": "Warung makan\n persewaan alat camping",
+    "ALAMAT": "Desa Wisata Prongil, Kecamatan Tinada",
+    "WAKTU OPERASIONAL": "senin - minggu\n 10.00 - 16.00",
+    "RATING BPODT": null
+  },
+  {
+    "NO": 35.0,
+    "KABUPATEN": null,
+    "OBJEK / DESTINASI WISATA": "Air Terjun Lae Singgabit",
+    "FASILITAS UMUM": null,
+    "FASILITAS PENUNJANG": null,
+    "ALAMAT": "Dusun Kuta Delleng, Desa Mahala, Kecamatan Tinaha",
+    "WAKTU OPERASIONAL": "senin - minggu\n 10.00 - 16.00",
+    "RATING BPODT": "hidden gem"
+  }
+]

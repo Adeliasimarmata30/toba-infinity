@@ -1,0 +1,13 @@
+{
+  "id": "dest-waterfront",
+  "name": "Waterfront City Pangururan",
+  "category": "Family",
+  "district": "Samosir",
+  "description": "Waterfront City Pangururan adalah nama dari destinasi wisata yang untuk pertama kalinya berfokus pada pembangunan dan pemanfaatan air danau Toba. Ketika pertunjukan sudah dimulai kita akan disuguhkan pemandangan betapa indahnya air mancur yang berwarna-warni menari-nari di atas luasnya danau Toba, yang juga diiringi dengan musik. Lalu ada juga pertunjukkan kisah terbentuknya danau Toba yang dipertunjukkan melalui pantulan proyektor, setiap sesi dan suasana saat kisah dimulai warna dan gerakan air terjun juga disesuaikan sehingga setiap penonton akan terbuai dan terbawa dalam suasana yang dikisahkan.",
+  "ticketPrice": 0,
+  "openingHours": "Sesi I: 19:00 WIB, Sesi II: 21:00 WIB",
+  "facilities": ["Musical Fountain Show", "Interactive Water Screen Projection", "Seaside Pedestrian Walkway", "Aesthetic Bridges", "Food Court", "Toilets"],
+  "latitude": 2.6288,
+  "longitude": 98.7188,
+  "story": "Pembangunan Waterfront City Pangururan dicanangkan oleh Kementerian PUPR untuk meningkatkan kualitas pariwisata berkelanjutan kelas dunia di Pulau Samosir."
+}

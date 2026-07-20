@@ -1,0 +1,31 @@
+{
+  "id": "cul-naniura",
+  "name": "Dengke Mas Na Niura",
+  "description": "Often referred to as the \"Batak Sushi.\" This legendary dish features raw gold fish (or lake carp) cured purely with acidic citrus juices and heavily flavored with roasted spices like andaliman.",
+  "history": "In ancient times, Dengke Na Niura was an exclusive royal culinary delicacy reserved solely for Batak kings. Over time, it became a highly sought-after cultural masterpiece for special gatherings.",
+  "ingredients": [
+    "Ultra-fresh Gold Fish or Tilapia (Nila)",
+    "Asam Jungga (Special Batak Citrus)",
+    "Roasted Andaliman Peppercorn",
+    "Roasted Candle-nuts (Kemiri)",
+    "Ginger, Turmeric, Shallots, Chilies"
+  ],
+  "preparation": [
+    "Carefully fillet the fresh gold fish or tilapia and thoroughly pat dry.",
+    "Squeeze Asam Jungga juice over the fish fillets. The highly acidic citrus acts as a chemical cooking agent, denaturing the proteins and \"cooking\" the fish raw.",
+    "Let the fish cure in citrus for 4 to 6 hours until the flesh firms up and turns opaque.",
+    "Roast the candle-nuts, shallots, garlic, and andaliman, then grind them into a rich, buttery, savory paste.",
+    "Thoroughly coat the cured fish fillets with the spicy paste before serving cold."
+  ],
+  "recommendedLocations": [
+    {
+      "name": "RM Lapo Batak Tipang",
+      "address": "Geosite Tipang Lakeside, Humbahas"
+    },
+    {
+      "name": "RM Na Niura Balige",
+      "address": "Jl. Patuan Nagari, Balige, Toba"
+    }
+  ],
+  "image": "https://images.unsplash.com/photo-1559183030-895177ef154b?q=80&w=800&auto=format&fit=crop"
+}

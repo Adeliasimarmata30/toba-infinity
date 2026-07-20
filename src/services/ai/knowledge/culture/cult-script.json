@@ -1,0 +1,8 @@
+{
+  "id": "cult-script",
+  "title": "Surat Batak (The Batak Script)",
+  "description": "The ancient pre-colonial abugida writing system of the Batak people, traditionally carved into bamboo tubes and bark books (Pustaha).",
+  "detailedContent": "The Batak Script, locally called \"Surat Batak,\" is an ancient abugida writing system derived from the Pallava and Kawi scripts of southern India, dating back centuries. \n\nIt consists of 19 basic characters (Ina ni Surat) which carry an inherent 'a' vowel. To change the vowel sound to 'i', 'u', 'e', or 'o', or to mute the vowel entirely, small diacritical marks (Anak ni Surat) are attached above, below, or beside the main character.\n\nUnlike many civilizations where writing was limited to administrative scribes, Surat Batak was heavily used by tribal shamans (Datu) to write the \"Pustaha Laklak\"—sacred accordion-folded books made of wild alim tree bark. These books stored ancestral knowledge on star-gazing calendars, healing herbal medicine recipes, astrology, and spiritual protection mantras. Today, it stands as a cherished symbol of Batak intellectual heritage.",
+  "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=800&auto=format&fit=crop",
+  "category": "script"
+}

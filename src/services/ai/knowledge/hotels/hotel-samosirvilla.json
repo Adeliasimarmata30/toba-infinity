@@ -1,0 +1,19 @@
+{
+  "id": "hotel-samosirvilla",
+  "name": "Samosir Villa Resort",
+  "description": "A highly spacious, family-focused resort with modern hotel structures and traditional cottages set directly on Samosir’s Tuk-Tuk peninsula, offering three expansive pools and a vibrant marina.",
+  "rating": 4.4,
+  "facilities": [
+    "Two Large Pools",
+    "Boat Jetty",
+    "Family Billiard Area",
+    "Lakeside Bar & Cafe",
+    "Spacious Gardens",
+    "Hot Showers"
+  ],
+  "priceRange": "Rp 550.000 - Rp 1.250.000",
+  "district": "Samosir",
+  "latitude": 2.6749,
+  "longitude": 98.8519,
+  "image": "https://images.unsplash.com/photo-1611891404114-5090bc21c3b7?q=80&w=800&auto=format&fit=crop"
+}

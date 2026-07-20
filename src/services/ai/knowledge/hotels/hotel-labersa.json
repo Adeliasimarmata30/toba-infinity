@@ -1,0 +1,19 @@
+{
+  "id": "hotel-labersa",
+  "name": "Labersa Hotel & Convention Balige",
+  "description": "A 4-star premium luxury hotel in Balige featuring comprehensive convention centers, elegant architectural accents, a large themed waterpark, and dynamic views overlooking the southern shores of the lake.",
+  "rating": 4.7,
+  "facilities": [
+    "Theme Waterpark",
+    "Free Wi-Fi",
+    "Swimming Pool",
+    "Meeting Rooms",
+    "Gym & Fitness Center",
+    "Restaurant & Lounge"
+  ],
+  "priceRange": "Rp 900.000 - Rp 2.100.000",
+  "district": "Toba",
+  "latitude": 2.3456,
+  "longitude": 99.0723,
+  "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "dest-sibodiala",
+  "name": "Paralayang Puncak Sibodiala, Balige",
+  "description": "Spot paralayang Puncak Sibodiala, Balige dibuka tahun 2024. Puncak Sibodiala memiliki pemandangan yang memukau mulai dari hutan pinus, deretan perbukitan, perkampungan dan perkebunan warga hingga pemandangan Danau Toba yang sangat luas. Dekat dengan Puncak Sibodiala terdapat Batu Basiha, formasi batuan vulkanik sisa ledakan maha dahsyat Toba 74.000 tahun silam. Pengunjung bisa mencoba paralayang dengan tarif Rp 550.000 (sudah termasuk asuransi kecelakaan).",
+  "district": "Toba",
+  "category": "Adventure",
+  "latitude": 2.3168,
+  "longitude": 99.0984,
+  "openingHours": "10:00 WIB - 17:00 WIB",
+  "ticketPrice": 550000,
+  "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
+  "rating": 4.8,
+  "facilities": [
+    "Paragliding Equipment",
+    "Professional Instructor",
+    "Insurance",
+    "Safety Gear",
+    "Photo Spots",
+    "Parking Lot"
+  ]
+}
