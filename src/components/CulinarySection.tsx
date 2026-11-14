@@ -139,7 +139,7 @@ export default function CulinarySection() {
           </p>
         </div>
         <img
-          src="https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=800&auto=format&fit=crop"
+          src="https://i0.wp.com/blog.duniamasak.com/wp-content/uploads/ikan-arsik-kuliner-khas-batak.jpg?w=900&ssl=1"
           alt="Culinary Arts"
           className="w-full md:w-56 h-36 object-cover rounded-[18px] shadow-md border border-white"
         />

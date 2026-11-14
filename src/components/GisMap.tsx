@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import { TOBA_DESTINATIONS, TOBA_HOTELS } from '../data/tobaData';
-import { 
-  Search, MapPin, Filter, Star, Navigation, Compass, Volume2, VolumeX, Mic, MicOff, 
+import { searchTobaDocuments } from '../services/database';
+import {
+  Search, MapPin, Filter, Star, Navigation, Compass, Volume2, VolumeX, Mic, MicOff,
   Layers, Shuffle, Activity, Calendar, ShieldAlert, CheckSquare, Trash2, HelpCircle,
   Award, Sparkles, BookOpen, Check
 } from 'lucide-react';
@@ -53,23 +54,24 @@ export default function GisMap() {
   const [selectedDistrict, setSelectedDistrict] = useState<string>('Semua Kabupaten');
   const [selectedCategory, setSelectedCategory] = useState<string>('Semua Kategori');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [supabaseSearchResults, setSupabaseSearchResults] = useState<any[]>([]);
   const [activeItem, setActiveItem] = useState<MapItem | null>(null);
 
   // --- NEW ADVANCED GIS FEATURES STATES ---
   const [userLocation, setUserLocation] = useState({ lat: 2.6625, lng: 98.9372, name: 'Parapat' });
   const [selectedLocationId, setSelectedLocationId] = useState('loc-parapat');
-  
+
   // Radius Search
   const [enableRadiusFilter, setEnableRadiusFilter] = useState(false);
   const [searchRadiusKm, setSearchRadiusKm] = useState(15);
-  
+
   // Heatmap layer active
   const [enableHeatmap, setEnableHeatmap] = useState(false);
   const [heatmapCircles, setHeatmapCircles] = useState<L.Circle[]>([]);
 
   // Nearby amenities active
   const [showAmenities, setShowAmenities] = useState<string[]>([]); // 'atm', 'hospital', 'fuel', 'cafe'
-  
+
   // AI Route Optimizer Checklist
   const [selectedRouteIds, setSelectedRouteIds] = useState<string[]>([]);
   const [optimizedRoutePath, setOptimizedRoutePath] = useState<MapItem[]>([]);
@@ -217,18 +219,18 @@ export default function GisMap() {
 
   const handleCheckIn = (id: string) => {
     if (visitedSpotIds.includes(id)) return;
-    
+
     const updated = [...visitedSpotIds, id];
     setVisitedSpotIds(updated);
     localStorage.setItem('toba_geopark_visited_locations', JSON.stringify(updated));
-    
+
     // Find newly unlocked badges
     const newlyUnlocked = GEOPARK_BADGES.filter(badge => {
       const wasLocked = !badge.checkUnlocked(visitedSpotIds);
       const isUnlockedNow = badge.checkUnlocked(updated);
       return wasLocked && isUnlockedNow;
     });
-    
+
     if (newlyUnlocked.length > 0) {
       setCelebrationBadge(newlyUnlocked[0]);
     } else {
@@ -277,6 +279,110 @@ export default function GisMap() {
       description: h.description
     }))
   ];
+  useEffect(() => {
+    if (!searchQuery.trim()) {
+      setSupabaseSearchResults([]);
+      return;
+    }
+
+    const timer = setTimeout(async () => {
+      const results = await searchTobaDocuments(searchQuery, 20);
+      setSupabaseSearchResults(results);
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
+
+  // Convert hasil Supabase menjadi MapItem
+const supabaseMapItems: MapItem[] = supabaseSearchResults.map((doc: any) => {
+  const metadata = doc.metadata || {};
+  const content = doc.content || '';
+
+  // Ambil koordinat dari content:
+  // lat-long: 2.5305337914347272, 98.69783122383308
+  const latLongMatch = content.match(
+    /lat-long:\s*([-\d.]+)\s*,\s*([-\d.]+)/i
+  );
+
+  const latitude = latLongMatch
+    ? Number(latLongMatch[1])
+    : Number(metadata.latitude || 0);
+
+  const longitude = latLongMatch
+    ? Number(latLongMatch[2])
+    : Number(metadata.longitude || 0);
+
+  // Rating
+  const ratingMatch = content.match(
+    /(?:rating|place-rating):\s*([\d.,]+)/i
+  );
+
+  const rating = Number(
+    metadata.rating ??
+      metadata['place-rating'] ??
+      ratingMatch?.[1]?.replace(',', '.') ??
+      0
+  );
+
+  // Nama tempat
+  const name =
+    metadata.place ||
+    metadata['place-name'] ||
+    content.match(/place-name:\s*(.+)/i)?.[1]?.trim() ||
+    'Destinasi Toba';
+
+  // Alamat
+  const address =
+    metadata.address ||
+    content.match(/address:\s*(.+)/i)?.[1]?.trim() ||
+    '';
+
+  // Kabupaten
+  let district = 'Toba';
+
+  if (/samosir/i.test(address)) {
+    district = 'Samosir';
+  } else if (/toba/i.test(address)) {
+    district = 'Toba';
+  } else if (/simalungun/i.test(address)) {
+    district = 'Simalungun';
+  } else if (/karo/i.test(address)) {
+    district = 'Karo';
+  } else if (/dairi/i.test(address)) {
+    district = 'Dairi';
+  } else if (/hum|humbang/i.test(address)) {
+    district = 'Humbang Hasundutan';
+  } else if (/pakpak/i.test(address)) {
+    district = 'Pakpak Bharat';
+  } else if (/tapanuli utara/i.test(address)) {
+    district = 'North Tapanuli';
+  }
+
+  return {
+    id: `supabase-${doc.id}`,
+    name,
+    type: 'destination' as const,
+    latitude,
+    longitude,
+    district,
+    category: metadata.category === 'wisata'
+      ? 'Nature'
+      : 'Akomodasi',
+    image: '',
+    priceOrTicket: metadata.price_from
+      ? `Rp ${Number(metadata.price_from).toLocaleString('id-ID')}`
+      : 'Lihat detail',
+    rating,
+    facilities: [],
+    description: content
+  };
+});
+
+// Gabungkan data lokal + Supabase
+const allMapItems: MapItem[] = [
+  ...mapItems,
+  ...supabaseMapItems
+];
 
   // Districts and categories
   const districts = ['Semua Kabupaten', ...Array.from(new Set(mapItems.map(item => item.district)))];
@@ -287,21 +393,21 @@ export default function GisMap() {
     const R = 6371; // radius in km
     const dLat = (lat2 - lat1) * Math.PI / 180;
     const dLon = (lon2 - lon1) * Math.PI / 180;
-    const a = 
-      Math.sin(dLat/2) * Math.sin(dLat/2) +
-      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
-      Math.sin(dLon/2) * Math.sin(dLon/2);
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    const a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
     return R * c;
   };
 
   // Filter items (incorporates search query, category, district AND optional radius)
-  const filteredItems = mapItems.filter(item => {
+  const filteredItems = allMapItems.filter(item => {
     const matchesDistrict = selectedDistrict === 'Semua Kabupaten' || item.district === selectedDistrict;
     const matchesCategory = selectedCategory === 'Semua Kategori' || item.category === selectedCategory;
-    const matchesSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          item.district.toLowerCase().includes(searchQuery.toLowerCase());
-    
+    const matchesSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      item.district.toLowerCase().includes(searchQuery.toLowerCase());
+
     let matchesRadius = true;
     if (enableRadiusFilter) {
       const dist = calculateDistance(userLocation.lat, userLocation.lng, item.latitude, item.longitude);
@@ -409,7 +515,7 @@ export default function GisMap() {
       const m = L.marker([am.latitude, am.longitude], { icon })
         .addTo(map)
         .bindPopup(`<b>${am.name}</b><br/>Amenitas Sekitar Pariwisata`);
-      
+
       amenityMarkersRef.current.push(m);
     });
 
@@ -429,7 +535,7 @@ export default function GisMap() {
     const utterance = new SpeechSynthesisUtterance(storyText);
     utterance.lang = 'id-ID';
     utterance.rate = 0.95;
-    
+
     utterance.onend = () => {
       setIsSpeakingStory(false);
     };
@@ -462,11 +568,11 @@ export default function GisMap() {
     }
 
     const itemsToOptimize = mapItems.filter(i => selectedRouteIds.includes(i.id));
-    
+
     // Start optimization from current user simulated location
     let currentLat = userLocation.lat;
     let currentLng = userLocation.lng;
-    
+
     const unvisited = [...itemsToOptimize];
     const optimizedPath: MapItem[] = [];
     let totalDistance = 0;
@@ -521,7 +627,7 @@ export default function GisMap() {
       }).addTo(map);
 
       routePolylineRef.current = poly;
-      
+
       // Auto-fit to route bounds
       map.fitBounds(poly.getBounds().pad(0.1));
     }
@@ -621,7 +727,7 @@ export default function GisMap() {
     if (enableHeatmap) {
       mapItems.forEach(item => {
         // High dense visual representation
-        const radius = 1800 + (item.rating * 500); 
+        const radius = 1800 + (item.rating * 500);
         const circle = L.circle([item.latitude, item.longitude], {
           color: '#ef4444',
           fillColor: '#f87171',
@@ -692,10 +798,10 @@ export default function GisMap() {
 
   return (
     <div id="advanced-gis-view" className="flex flex-col lg:flex-row h-[calc(110vh-92px)] rounded-3xl overflow-hidden border border-slate-100 shadow-2xl bg-white">
-      
+
       {/* SIDEBAR PANELS CONTROLS */}
       <div className="w-full lg:w-[420px] border-r border-slate-100 flex flex-col bg-slate-50/50 overflow-y-auto">
-        
+
         {/* UPPER BRAND & SEARCH */}
         <div className="p-4 bg-slate-900 text-white space-y-3.5 shadow-md">
           <div className="flex items-center justify-between">
@@ -750,22 +856,20 @@ export default function GisMap() {
         <div className="flex bg-slate-100 border-b border-slate-200">
           <button
             onClick={() => setActiveSidebarTab('controls')}
-            className={`flex-1 py-2.5 text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 border-b-2 ${
-              activeSidebarTab === 'controls'
+            className={`flex-1 py-2.5 text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 border-b-2 ${activeSidebarTab === 'controls'
                 ? 'bg-white text-slate-900 border-sky-500'
                 : 'text-slate-500 hover:text-slate-800 border-transparent bg-slate-50/50'
-            }`}
+              }`}
           >
             <Layers className="w-3.5 h-3.5" />
             Peta & Analisis
           </button>
           <button
             onClick={() => setActiveSidebarTab('badges')}
-            className={`flex-1 py-2.5 text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 border-b-2 ${
-              activeSidebarTab === 'badges'
+            className={`flex-1 py-2.5 text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 border-b-2 ${activeSidebarTab === 'badges'
                 ? 'bg-white text-slate-900 border-sky-500'
                 : 'text-slate-500 hover:text-slate-800 border-transparent bg-slate-50/50'
-            }`}
+              }`}
           >
             <Award className="w-3.5 h-3.5 text-amber-500" />
             Lencana Penjelajah
@@ -780,298 +884,338 @@ export default function GisMap() {
         {activeSidebarTab === 'controls' ? (
           <>
             {/* MIDDLE CONTROLS: LAYER & RADIUS SEARCH */}
-        <div className="p-4 border-b border-slate-200 bg-white space-y-4 shadow-sm">
-          <div className="flex justify-between items-center">
-            <h3 className="text-xs font-bold text-slate-500 font-mono flex items-center gap-1">
-              <Layers className="w-4 h-4 text-slate-400" />
-              OVERLAYS & ANALISIS GEOSPATIAL
-            </h3>
-          </div>
-
-          {/* Toggle Buttons */}
-          <div className="grid grid-cols-2 gap-2">
-            <button
-              onClick={() => setEnableRadiusFilter(!enableRadiusFilter)}
-              className={`p-2 rounded-xl text-xs font-bold border transition-all cursor-pointer flex items-center justify-center gap-1.5 ${
-                enableRadiusFilter 
-                  ? 'bg-sky-50 border-sky-300 text-sky-700 ring-2 ring-sky-500/10' 
-                  : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100'
-              }`}
-            >
-              <Compass className="w-3.5 h-3.5" />
-              Radius Filter: {enableRadiusFilter ? 'ON' : 'OFF'}
-            </button>
-            
-            <button
-              onClick={() => setEnableHeatmap(!enableHeatmap)}
-              className={`p-2 rounded-xl text-xs font-bold border transition-all cursor-pointer flex items-center justify-center gap-1.5 ${
-                enableHeatmap 
-                  ? 'bg-red-50 border-red-300 text-red-700 ring-2 ring-red-500/10' 
-                  : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100'
-              }`}
-            >
-              <Activity className="w-3.5 h-3.5" />
-              Kepadatan (Heatmap)
-            </button>
-          </div>
-
-          {/* Radius Slider */}
-          {enableRadiusFilter && (
-            <div className="space-y-1.5 p-3 rounded-xl bg-sky-50/50 border border-sky-100">
-              <div className="flex justify-between items-center text-xs text-sky-800 font-bold">
-                <span>Jangkauan Radius</span>
-                <span className="font-mono">{searchRadiusKm} km</span>
+            <div className="p-4 border-b border-slate-200 bg-white space-y-4 shadow-sm">
+              <div className="flex justify-between items-center">
+                <h3 className="text-xs font-bold text-slate-500 font-mono flex items-center gap-1">
+                  <Layers className="w-4 h-4 text-slate-400" />
+                  OVERLAYS & ANALISIS GEOSPATIAL
+                </h3>
               </div>
-              <input
-                type="range"
-                min="5"
-                max="60"
-                step="5"
-                value={searchRadiusKm}
-                onChange={(e) => setSearchRadiusKm(Number(e.target.value))}
-                className="w-full h-1.5 bg-sky-200 rounded-lg appearance-none cursor-pointer accent-sky-600"
-              />
-              <p className="text-[10px] text-sky-600 leading-normal">
-                Hanya menampilkan destinasi yang berjarak kurang dari <b>{searchRadiusKm} km</b> dari titik awal Anda.
-              </p>
-            </div>
-          )}
 
-          {/* Amenitas Sekitar toggles */}
-          <div className="space-y-1.5">
-            <label className="text-[10px] font-mono tracking-wider text-slate-400 uppercase">Fasilitas & Amenitas Sekitar (Simulasi GIS)</label>
-            <div className="flex flex-wrap gap-1.5">
-              {[
-                { id: 'hospital', label: '🏥 RS/Klinik' },
-                { id: 'atm', label: '🏧 ATM' },
-                { id: 'fuel', label: '⛽ SPBU' },
-                { id: 'cafe', label: '☕ Cafe Kuliner' }
-              ].map(am => {
-                const isActive = showAmenities.includes(am.id);
-                return (
-                  <button
-                    key={am.id}
-                    onClick={() => toggleAmenityType(am.id)}
-                    className={`px-3 py-1 rounded-full text-xs font-semibold border transition-all cursor-pointer ${
-                      isActive 
-                        ? 'bg-emerald-500 border-emerald-500 text-white shadow-sm' 
-                        : 'bg-slate-100 border-slate-200 text-slate-600 hover:bg-slate-200'
+              {/* Toggle Buttons */}
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  onClick={() => setEnableRadiusFilter(!enableRadiusFilter)}
+                  className={`p-2 rounded-xl text-xs font-bold border transition-all cursor-pointer flex items-center justify-center gap-1.5 ${enableRadiusFilter
+                      ? 'bg-sky-50 border-sky-300 text-sky-700 ring-2 ring-sky-500/10'
+                      : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100'
                     }`}
-                  >
-                    {am.label}
+                >
+                  <Compass className="w-3.5 h-3.5" />
+                  Radius Filter: {enableRadiusFilter ? 'ON' : 'OFF'}
+                </button>
+
+                <button
+                  onClick={() => setEnableHeatmap(!enableHeatmap)}
+                  className={`p-2 rounded-xl text-xs font-bold border transition-all cursor-pointer flex items-center justify-center gap-1.5 ${enableHeatmap
+                      ? 'bg-red-50 border-red-300 text-red-700 ring-2 ring-red-500/10'
+                      : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100'
+                    }`}
+                >
+                  <Activity className="w-3.5 h-3.5" />
+                  Kepadatan (Heatmap)
+                </button>
+              </div>
+
+              {/* Radius Slider */}
+              {enableRadiusFilter && (
+                <div className="space-y-1.5 p-3 rounded-xl bg-sky-50/50 border border-sky-100">
+                  <div className="flex justify-between items-center text-xs text-sky-800 font-bold">
+                    <span>Jangkauan Radius</span>
+                    <span className="font-mono">{searchRadiusKm} km</span>
+                  </div>
+                  <input
+                    type="range"
+                    min="5"
+                    max="60"
+                    step="5"
+                    value={searchRadiusKm}
+                    onChange={(e) => setSearchRadiusKm(Number(e.target.value))}
+                    className="w-full h-1.5 bg-sky-200 rounded-lg appearance-none cursor-pointer accent-sky-600"
+                  />
+                  <p className="text-[10px] text-sky-600 leading-normal">
+                    Hanya menampilkan destinasi yang berjarak kurang dari <b>{searchRadiusKm} km</b> dari titik awal Anda.
+                  </p>
+                </div>
+              )}
+
+              {/* Amenitas Sekitar toggles */}
+              <div className="space-y-1.5">
+                <label className="text-[10px] font-mono tracking-wider text-slate-400 uppercase">Fasilitas & Amenitas Sekitar (Simulasi GIS)</label>
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    { id: 'hospital', label: '🏥 RS/Klinik' },
+                    { id: 'atm', label: '🏧 ATM' },
+                    { id: 'fuel', label: '⛽ SPBU' },
+                    { id: 'cafe', label: '☕ Cafe Kuliner' }
+                  ].map(am => {
+                    const isActive = showAmenities.includes(am.id);
+                    return (
+                      <button
+                        key={am.id}
+                        onClick={() => toggleAmenityType(am.id)}
+                        className={`px-3 py-1 rounded-full text-xs font-semibold border transition-all cursor-pointer ${isActive
+                            ? 'bg-emerald-500 border-emerald-500 text-white shadow-sm'
+                            : 'bg-slate-100 border-slate-200 text-slate-600 hover:bg-slate-200'
+                          }`}
+                      >
+                        {am.label}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+
+            {/* CONTROLS: COMPASS ROUTE CHECKBOXES & TSP OPTIMIZER */}
+            <div className="p-4 border-b border-slate-200 bg-white space-y-4">
+              <div className="flex justify-between items-center">
+                <h3 className="text-xs font-bold text-slate-500 font-mono flex items-center gap-1">
+                  <Shuffle className="w-4 h-4 text-amber-500" />
+                  AI ROUTE OPTIMIZER (ANTI-BACKTRACKING)
+                </h3>
+                {selectedRouteIds.length > 0 && (
+                  <button onClick={handleClearRouteSelections} className="text-[10px] font-bold text-red-500 hover:underline">
+                    Hapus
                   </button>
+                )}
+              </div>
+
+              <p className="text-[10px] text-slate-400 leading-normal">
+                Pilih destinasi yang ingin dikunjungi di bawah, AI akan menata urutan terbaik berdasarkan rute geografis terpendek untuk menghemat bensin & waktu.
+              </p>
+
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={handleOptimizeRoute}
+                  className="w-full py-2.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 hover:-translate-y-0.5 text-slate-950 font-extrabold rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-lg shadow-amber-500/15 hover:shadow-amber-500/25 transition-all cursor-pointer"
+                >
+                  <Compass className="w-4 h-4 text-slate-950 animate-pulse" />
+                  Kalkulasi Optimasi Rute AI ({selectedRouteIds.length} Terpilih)
+                </button>
+              </div>
+
+              {/* Optimasi results details */}
+              {optimizedRoutePath.length > 0 && (
+                <div className="p-3 bg-amber-50 rounded-2xl border border-amber-200 space-y-2 text-xs">
+                  <div className="flex justify-between items-center text-amber-800 font-bold">
+                    <span>Rekomendasi Rute Terbaik:</span>
+                    <span className="font-mono bg-white border border-amber-300 px-1.5 py-0.5 rounded text-[10px] text-amber-700">
+                      Total Jarak: {routeDistanceText}
+                    </span>
+                  </div>
+                  <ol className="list-decimal list-inside space-y-1 text-slate-700 font-medium">
+                    <li>Titik Mulai Sesi: <b>{userLocation.name}</b></li>
+                    {optimizedRoutePath.map((item, idx) => (
+                      <li key={item.id} className="text-slate-800">
+                        {item.name} <span className="text-[10px] text-slate-400 font-mono">({item.district})</span>
+                      </li>
+                    ))}
+                  </ol>
+                  <p className="text-[10px] text-amber-700 leading-normal">
+                    ⏱️ Estimasi total waktu perjalanan darat: <b>{routeDurationText}</b> (Dengan kecepatan rata-rata pegunungan 35km/jam).
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* COMPONENT: COMPASS DESTINATION COMPARATOR */}
+            <div className="p-4 border-b border-slate-200 bg-white space-y-4">
+              <h3 className="text-xs font-bold text-slate-500 font-mono flex items-center gap-1">
+                <Shuffle className="w-4 h-4 text-sky-500" />
+                AI COMPASS: COMPARISON MATRIX
+              </h3>
+
+              <div className="grid grid-cols-2 gap-2">
+                <select
+                  value={compareItemA}
+                  onChange={(e) => setCompareItemA(e.target.value)}
+                  className="w-full p-2 text-xs border border-slate-200 rounded-xl bg-slate-50 outline-none"
+                >
+                  <option value="">-- Pilih Objek A --</option>
+                  {mapItems.map(item => (
+                    <option key={item.id} value={item.id}>{item.name}</option>
+                  ))}
+                </select>
+
+                <select
+                  value={compareItemB}
+                  onChange={(e) => setCompareItemB(e.target.value)}
+                  className="w-full p-2 text-xs border border-slate-200 rounded-xl bg-slate-50 outline-none"
+                >
+                  <option value="">-- Pilih Objek B --</option>
+                  {mapItems.map(item => (
+                    <option key={item.id} value={item.id}>{item.name}</option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Comparison Table */}
+              {itemAData && itemBData ? (
+                <div className="border border-slate-200 rounded-xl overflow-hidden bg-white text-xs">
+                  <table className="w-full text-left border-collapse">
+                    <thead>
+                      <tr className="bg-slate-50 border-b border-slate-200 text-slate-500 font-mono font-bold text-[10px]">
+                        <th className="p-2">Fitur / Data</th>
+                        <th className="p-2 text-sky-600 truncate max-w-[80px]">{itemAData.name}</th>
+                        <th className="p-2 text-pink-600 truncate max-w-[80px]">{itemBData.name}</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100 text-slate-700">
+                      <tr>
+                        <td className="p-2 font-semibold bg-slate-50 text-slate-400">Kategori</td>
+                        <td className="p-2">{itemAData.category}</td>
+                        <td className="p-2">{itemBData.category}</td>
+                      </tr>
+                      <tr>
+                        <td className="p-2 font-semibold bg-slate-50 text-slate-400">Kabupaten</td>
+                        <td className="p-2">{itemAData.district}</td>
+                        <td className="p-2">{itemBData.district}</td>
+                      </tr>
+                      <tr>
+                        <td className="p-2 font-semibold bg-slate-50 text-slate-400">Peringkat</td>
+                        <td className="p-2 flex items-center gap-0.5 text-amber-500 font-bold">
+                          ⭐ {itemAData.rating}
+                        </td>
+                        <td className="p-2 text-amber-500 font-bold">
+                          ⭐ {itemBData.rating}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="p-2 font-semibold bg-slate-50 text-slate-400">Tarif / Harga</td>
+                        <td className="p-2">{itemAData.priceOrTicket}</td>
+                        <td className="p-2">{itemBData.priceOrTicket}</td>
+                      </tr>
+                      <tr>
+                        <td className="p-2 font-semibold bg-slate-50 text-slate-400">Fasilitas Utama</td>
+                        <td className="p-2">{itemAData.facilities.slice(0, 2).join(', ')}</td>
+                        <td className="p-2">{itemBData.facilities.slice(0, 2).join(', ')}</td>
+                      </tr>
+                      <tr>
+                        <td className="p-2 font-semibold bg-slate-50 text-slate-400">Camping Ground?</td>
+                        <td className="p-2">
+                          {itemAData.facilities.some(f => f.toLowerCase().includes('camp')) ? '✅ Tersedia' : '❌ Tidak'}
+                        </td>
+                        <td className="p-2">
+                          {itemBData.facilities.some(f => f.toLowerCase().includes('camp')) ? '✅ Tersedia' : '❌ Tidak'}
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              ) : (
+                <p className="text-[10px] text-slate-400 italic text-center py-2">
+                  Pilih dua tempat di atas untuk melihat matriks komparasi instan.
+                </p>
+              )}
+            </div>
+
+            {/* SEARCH RESULTS LIST */}
+            <div className="p-4 space-y-3">
+
+              {/* hasil Supabase */}
+              {supabaseSearchResults.map(doc => {
+                const metadata = doc.metadata || {};
+
+                return (
+<div
+  key={`supabase-${doc.id}`}
+  onClick={() => {
+    const item = supabaseMapItems.find(
+      item => item.id === `supabase-${doc.id}`
+    );
+
+    if (item) {
+      handleSelectItem(item);
+    }
+  }}
+  className="w-full bg-white border border-sky-100 rounded-2xl p-3 shadow-sm cursor-pointer hover:shadow-md hover:border-sky-400 transition-all"
+>
+                    <div className="flex items-start justify-between">
+                      <div>
+                        <h3 className="font-bold text-xs text-slate-800">
+                          {metadata.place || 'Tempat Wisata'}
+                        </h3>
+
+                        <p className="text-[10px] text-slate-400 mt-1">
+                          {metadata.address || 'Alamat tidak tersedia'}
+                        </p>
+
+                        <span className="text-[9px] font-bold text-amber-500">
+                          ⭐ {metadata.rating ?? '-'}
+                        </span>
+                      </div>
+
+                      <span className="text-[8px] font-bold text-emerald-600">
+                        SUPABASE
+                      </span>
+                    </div>
+
+                    <p className="text-[10px] text-slate-500 mt-2">
+                      {doc.content}
+                    </p>
+                  </div>
                 );
               })}
-            </div>
-          </div>
-        </div>
 
-        {/* CONTROLS: COMPASS ROUTE CHECKBOXES & TSP OPTIMIZER */}
-        <div className="p-4 border-b border-slate-200 bg-white space-y-4">
-          <div className="flex justify-between items-center">
-            <h3 className="text-xs font-bold text-slate-500 font-mono flex items-center gap-1">
-              <Shuffle className="w-4 h-4 text-amber-500" />
-              AI ROUTE OPTIMIZER (ANTI-BACKTRACKING)
-            </h3>
-            {selectedRouteIds.length > 0 && (
-              <button onClick={handleClearRouteSelections} className="text-[10px] font-bold text-red-500 hover:underline">
-                Hapus
-              </button>
-            )}
-          </div>
-
-          <p className="text-[10px] text-slate-400 leading-normal">
-            Pilih destinasi yang ingin dikunjungi di bawah, AI akan menata urutan terbaik berdasarkan rute geografis terpendek untuk menghemat bensin & waktu.
-          </p>
-
-          <div className="flex items-center gap-2">
-            <button
-              onClick={handleOptimizeRoute}
-              className="w-full py-2.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 hover:-translate-y-0.5 text-slate-950 font-extrabold rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-lg shadow-amber-500/15 hover:shadow-amber-500/25 transition-all cursor-pointer"
-            >
-              <Compass className="w-4 h-4 text-slate-950 animate-pulse" />
-              Kalkulasi Optimasi Rute AI ({selectedRouteIds.length} Terpilih)
-            </button>
-          </div>
-
-          {/* Optimasi results details */}
-          {optimizedRoutePath.length > 0 && (
-            <div className="p-3 bg-amber-50 rounded-2xl border border-amber-200 space-y-2 text-xs">
-              <div className="flex justify-between items-center text-amber-800 font-bold">
-                <span>Rekomendasi Rute Terbaik:</span>
-                <span className="font-mono bg-white border border-amber-300 px-1.5 py-0.5 rounded text-[10px] text-amber-700">
-                  Total Jarak: {routeDistanceText}
-                </span>
-              </div>
-              <ol className="list-decimal list-inside space-y-1 text-slate-700 font-medium">
-                <li>Titik Mulai Sesi: <b>{userLocation.name}</b></li>
-                {optimizedRoutePath.map((item, idx) => (
-                  <li key={item.id} className="text-slate-800">
-                    {item.name} <span className="text-[10px] text-slate-400 font-mono">({item.district})</span>
-                  </li>
-                ))}
-              </ol>
-              <p className="text-[10px] text-amber-700 leading-normal">
-                ⏱️ Estimasi total waktu perjalanan darat: <b>{routeDurationText}</b> (Dengan kecepatan rata-rata pegunungan 35km/jam).
-              </p>
-            </div>
-          )}
-        </div>
-
-        {/* COMPONENT: COMPASS DESTINATION COMPARATOR */}
-        <div className="p-4 border-b border-slate-200 bg-white space-y-4">
-          <h3 className="text-xs font-bold text-slate-500 font-mono flex items-center gap-1">
-            <Shuffle className="w-4 h-4 text-sky-500" />
-            AI COMPASS: COMPARISON MATRIX
-          </h3>
-
-          <div className="grid grid-cols-2 gap-2">
-            <select
-              value={compareItemA}
-              onChange={(e) => setCompareItemA(e.target.value)}
-              className="w-full p-2 text-xs border border-slate-200 rounded-xl bg-slate-50 outline-none"
-            >
-              <option value="">-- Pilih Objek A --</option>
-              {mapItems.map(item => (
-                <option key={item.id} value={item.id}>{item.name}</option>
-              ))}
-            </select>
-
-            <select
-              value={compareItemB}
-              onChange={(e) => setCompareItemB(e.target.value)}
-              className="w-full p-2 text-xs border border-slate-200 rounded-xl bg-slate-50 outline-none"
-            >
-              <option value="">-- Pilih Objek B --</option>
-              {mapItems.map(item => (
-                <option key={item.id} value={item.id}>{item.name}</option>
-              ))}
-            </select>
-          </div>
-
-          {/* Comparison Table */}
-          {itemAData && itemBData ? (
-            <div className="border border-slate-200 rounded-xl overflow-hidden bg-white text-xs">
-              <table className="w-full text-left border-collapse">
-                <thead>
-                  <tr className="bg-slate-50 border-b border-slate-200 text-slate-500 font-mono font-bold text-[10px]">
-                    <th className="p-2">Fitur / Data</th>
-                    <th className="p-2 text-sky-600 truncate max-w-[80px]">{itemAData.name}</th>
-                    <th className="p-2 text-pink-600 truncate max-w-[80px]">{itemBData.name}</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-100 text-slate-700">
-                  <tr>
-                    <td className="p-2 font-semibold bg-slate-50 text-slate-400">Kategori</td>
-                    <td className="p-2">{itemAData.category}</td>
-                    <td className="p-2">{itemBData.category}</td>
-                  </tr>
-                  <tr>
-                    <td className="p-2 font-semibold bg-slate-50 text-slate-400">Kabupaten</td>
-                    <td className="p-2">{itemAData.district}</td>
-                    <td className="p-2">{itemBData.district}</td>
-                  </tr>
-                  <tr>
-                    <td className="p-2 font-semibold bg-slate-50 text-slate-400">Peringkat</td>
-                    <td className="p-2 flex items-center gap-0.5 text-amber-500 font-bold">
-                      ⭐ {itemAData.rating}
-                    </td>
-                    <td className="p-2 text-amber-500 font-bold">
-                      ⭐ {itemBData.rating}
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="p-2 font-semibold bg-slate-50 text-slate-400">Tarif / Harga</td>
-                    <td className="p-2">{itemAData.priceOrTicket}</td>
-                    <td className="p-2">{itemBData.priceOrTicket}</td>
-                  </tr>
-                  <tr>
-                    <td className="p-2 font-semibold bg-slate-50 text-slate-400">Fasilitas Utama</td>
-                    <td className="p-2">{itemAData.facilities.slice(0, 2).join(', ')}</td>
-                    <td className="p-2">{itemBData.facilities.slice(0, 2).join(', ')}</td>
-                  </tr>
-                  <tr>
-                    <td className="p-2 font-semibold bg-slate-50 text-slate-400">Camping Ground?</td>
-                    <td className="p-2">
-                      {itemAData.facilities.some(f => f.toLowerCase().includes('camp')) ? '✅ Tersedia' : '❌ Tidak'}
-                    </td>
-                    <td className="p-2">
-                      {itemBData.facilities.some(f => f.toLowerCase().includes('camp')) ? '✅ Tersedia' : '❌ Tidak'}
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          ) : (
-            <p className="text-[10px] text-slate-400 italic text-center py-2">
-              Pilih dua tempat di atas untuk melihat matriks komparasi instan.
-            </p>
-          )}
-        </div>
-
-        {/* SEARCH RESULTS LIST */}
-        <div className="p-4 space-y-3">
-          <p className="text-xs font-bold text-slate-400 font-mono uppercase tracking-wider">Daftar Hasil Penemuan ({filteredItems.length})</p>
-          
-          {filteredItems.length === 0 ? (
-            <div className="text-center py-8 bg-white border border-dashed border-slate-200 rounded-xl p-4">
-              <p className="text-xs text-slate-400">Tidak ada objek yang sesuai dengan kriteria filter.</p>
-            </div>
-          ) : (
-            <div className="space-y-2.5">
+              {/* hasil lokal */}
               {filteredItems.map(item => {
                 const isCheckedInRoute = selectedRouteIds.includes(item.id);
+
                 return (
                   <div
                     key={item.id}
-                    className={`w-full bg-white border rounded-2xl overflow-hidden flex shadow-sm hover:shadow-md transition-all group ${
-                      activeItem?.id === item.id ? 'border-sky-500 ring-2 ring-sky-500/5' : 'border-slate-100'
-                    }`}
+                    className="w-full bg-white border border-slate-100 rounded-2xl overflow-hidden flex shadow-sm"
                   >
-                    {/* Checklist route check */}
-                    <div className="p-2 flex items-center justify-center bg-slate-50 border-r border-slate-100">
+                    <div className="p-2 flex items-center">
                       <input
                         type="checkbox"
                         checked={isCheckedInRoute}
                         onChange={() => toggleRouteSelection(item.id)}
-                        className="w-4 h-4 text-sky-500 rounded border-slate-300 focus:ring-sky-500"
-                        title="Tambahkan ke Optimasi Rute AI"
+                        className="w-4 h-4"
                       />
                     </div>
 
                     <button
                       onClick={() => handleSelectItem(item)}
-                      className="flex-1 text-left flex items-stretch min-w-0"
+                      className="flex-1 text-left flex"
                     >
                       <img
                         src={item.image}
                         alt={item.name}
-                        className="w-20 h-20 object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-20 h-20 object-cover"
                       />
-                      <div className="p-3 flex-1 flex flex-col justify-between min-w-0">
-                        <div>
-                          <h3 className="font-bold text-xs text-slate-800 truncate group-hover:text-sky-500 transition-colors">{item.name}</h3>
-                          <p className="text-[10px] text-slate-400 mt-0.5">{item.district}</p>
-                        </div>
-                        
-                        <div className="flex items-center justify-between mt-1">
-                          <span className="text-[9px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 uppercase">
-                            {item.category}
-                          </span>
-                          <div className="flex items-center gap-1">
-                            <Star className="w-3 h-3 fill-amber-400 stroke-amber-400" />
-                            <span className="text-[11px] font-bold text-slate-700">{item.rating}</span>
-                          </div>
-                        </div>
+
+                      <div className="p-3">
+                        <h3 className="font-bold text-xs text-slate-800">
+                          {item.name}
+                        </h3>
+
+                        <p className="text-[10px] text-slate-400">
+                          {item.district}
+                        </p>
+
+                        <span className="text-[10px] font-bold">
+                          ⭐ {item.rating}
+                        </span>
                       </div>
                     </button>
                   </div>
                 );
               })}
+
+              {/* tidak ada hasil */}
+              {filteredItems.length === 0 &&
+                supabaseSearchResults.length === 0 && (
+                  <div className="text-center py-8">
+                    <p className="text-xs text-slate-400">
+                      Tidak ada objek yang ditemukan.
+                    </p>
+                  </div>
+                )}
+
             </div>
-          )}
-        </div>
-        </>
+          </>
         ) : (
           /* GEOPARK EXPLORER BADGE TAB */
           <div className="p-4 space-y-5 animate-fade-in bg-white flex-1 flex flex-col justify-between">
@@ -1086,11 +1230,11 @@ export default function GisMap() {
                   {language === 'en' ? 'Earn Rewards Exploring the Beauty of Toba' : 'Dapatkan Penghargaan Menjelajahi Keindahan Toba'}
                 </h3>
                 <p className="text-[10px] text-slate-300 leading-relaxed">
-                  {language === 'en' 
-                    ? 'Visit historic Batak geosites, ancient supervolcano peaks, and magical waterfalls to unlock legendary badges!' 
+                  {language === 'en'
+                    ? 'Visit historic Batak geosites, ancient supervolcano peaks, and magical waterfalls to unlock legendary badges!'
                     : 'Kunjungi geosite bersejarah, puncak bukit sisa letusan purba, dan air terjun magis untuk membuka lencana legenda!'}
                 </p>
-                
+
                 {/* GLOBAL PROGRESS BAR */}
                 <div className="space-y-1.5 pt-1">
                   <div className="flex justify-between items-center text-[10px] font-mono text-slate-300 font-bold">
@@ -1098,7 +1242,7 @@ export default function GisMap() {
                     <span>{visitedSpotIds.length} / {mapItems.filter(i => i.type === 'destination').length}</span>
                   </div>
                   <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden border border-slate-700/50">
-                    <div 
+                    <div
                       className="h-full bg-gradient-to-r from-amber-400 to-amber-500 rounded-full transition-all duration-500"
                       style={{ width: `${Math.max(4, (visitedSpotIds.length / Math.max(1, mapItems.filter(i => i.type === 'destination').length)) * 100)}%` }}
                     />
@@ -1116,19 +1260,17 @@ export default function GisMap() {
                     const isUnlocked = badge.checkUnlocked(visitedSpotIds);
                     const progress = badge.getProgress(visitedSpotIds);
                     return (
-                      <div 
+                      <div
                         key={badge.id}
-                        className={`p-3 border rounded-2xl flex gap-3 items-start transition-all ${
-                          isUnlocked 
-                            ? `${badge.bgClass} ${badge.borderClass} shadow-xs ring-1 ring-black/5` 
+                        className={`p-3 border rounded-2xl flex gap-3 items-start transition-all ${isUnlocked
+                            ? `${badge.bgClass} ${badge.borderClass} shadow-xs ring-1 ring-black/5`
                             : 'bg-slate-50/50 border-slate-100 grayscale opacity-60'
-                        }`}
+                          }`}
                       >
-                        <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border ${
-                          isUnlocked 
-                            ? 'bg-white shadow-xs border-slate-200/50' 
+                        <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border ${isUnlocked
+                            ? 'bg-white shadow-xs border-slate-200/50'
                             : 'bg-slate-100 border-slate-200'
-                        }`}>
+                          }`}>
                           {getBadgeIcon(badge.iconName, `w-5.5 h-5.5 ${isUnlocked ? badge.colorClass : 'text-slate-400'}`)}
                         </div>
                         <div className="flex-1 min-w-0">
@@ -1147,13 +1289,13 @@ export default function GisMap() {
                           <p className="text-[10px] text-slate-500 leading-normal mt-0.5">
                             {badge.description[language] || badge.description.id}
                           </p>
-                          
+
                           {/* Progress Line for locked/in-progress badges */}
                           {!isUnlocked && (
                             <div className="mt-2 flex items-center gap-2">
                               <div className="flex-1 h-1 bg-slate-100 rounded-full overflow-hidden">
-                                <div 
-                                  className="h-full bg-slate-400 rounded-full" 
+                                <div
+                                  className="h-full bg-slate-400 rounded-full"
                                   style={{ width: `${(progress.current / progress.total) * 100}%` }}
                                 />
                               </div>
@@ -1258,14 +1400,13 @@ export default function GisMap() {
                     Dengarkan audio suara legenda rakyat batak setempat seputar objek ini.
                   </p>
                 </div>
-                
+
                 <button
                   onClick={() => handleToggleStorySpeech(getStoryText(activeItem))}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all hover:-translate-y-0.5 flex items-center gap-1 cursor-pointer ${
-                    isSpeakingStory 
-                      ? 'bg-red-500 hover:bg-red-600 text-white shadow-lg shadow-red-500/10' 
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all hover:-translate-y-0.5 flex items-center gap-1 cursor-pointer ${isSpeakingStory
+                      ? 'bg-red-500 hover:bg-red-600 text-white shadow-lg shadow-red-500/10'
                       : 'bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white shadow-lg shadow-sky-500/10 hover:shadow-sky-500/20'
-                  }`}
+                    }`}
                 >
                   {isSpeakingStory ? (
                     <>
@@ -1343,7 +1484,7 @@ export default function GisMap() {
         <AnimatePresence>
           {celebrationBadge && (
             <div className="absolute inset-0 bg-slate-950/75 backdrop-blur-md z-50 flex items-center justify-center p-4">
-              <motion.div 
+              <motion.div
                 initial={{ scale: 0.9, y: 20, opacity: 0 }}
                 animate={{ scale: 1, y: 0, opacity: 1 }}
                 className="bg-white rounded-3xl p-6 max-w-sm w-full text-center space-y-5 border border-slate-100 shadow-2xl relative overflow-hidden"

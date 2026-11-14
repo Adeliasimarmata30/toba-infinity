@@ -5,7 +5,7 @@
 
 import { createClient } from '@supabase/supabase-js';
 import { Destination, Hotel, Review, Favorite, Itinerary, ChatMessage } from '../types';
-import { TOBA_DESTINATIONS, TOBA_HOTELS } from '../data/tobaData';
+
 
 // Fetch credentials from Vite environment variables Safely
 const supabaseUrl = (import.meta as any).env?.VITE_SUPABASE_URL || '';
@@ -14,9 +14,9 @@ const supabaseAnonKey = (import.meta as any).env?.VITE_SUPABASE_ANON_KEY || '';
 // Check if credentials are valid and not placeholders
 const isPlaceholder = (url: string, key: string) => {
   return (
-    !url || 
-    !key || 
-    url.includes('your-project') || 
+    !url ||
+    !key ||
+    url.includes('your-project') ||
     key.includes('your-anon-key') ||
     url === 'MY_SUPABASE_URL' ||
     key === 'MY_SUPABASE_ANON_KEY'
@@ -24,8 +24,8 @@ const isPlaceholder = (url: string, key: string) => {
 };
 
 // Initialize Supabase Client if credentials are provided and not placeholders
-export const supabase = !isPlaceholder(supabaseUrl, supabaseAnonKey) 
-  ? createClient(supabaseUrl, supabaseAnonKey) 
+export const supabase = !isPlaceholder(supabaseUrl, supabaseAnonKey)
+  ? createClient(supabaseUrl, supabaseAnonKey)
   : null;
 
 // Self-healing database connection tracker
@@ -52,6 +52,112 @@ export function disableSupabase(error?: any, context?: string) {
 
 export function getSupabase() {
   return isSupabaseHealthy ? supabase : null;
+}
+// -------------------------------------------------------------
+// TOBA TOURISM DATA — SUPABASE DOCUMENTS
+// -------------------------------------------------------------
+
+export interface TobaDocument {
+  id: number | string;
+  content: string;
+  metadata: {
+    place?: string;
+    sheet?: string;
+    rating?: number | string;
+    address?: string;
+    category?: string;
+    price_from?: number | string;
+    service_hour?: string;
+    [key: string]: any;
+  };
+}
+export async function searchTobaDocuments(
+  query: string,
+  limit = 30
+): Promise<TobaDocument[]> {
+  const client = getSupabase();
+
+  if (!client || !query.trim()) return [];
+
+  const q = query.trim();
+
+  try {
+    // Cari berdasarkan CONTENT
+    const contentResult = await client
+      .from('documents')
+      .select('id, content, metadata')
+      .ilike('content', `%${q}%`)
+      .limit(limit);
+
+    // Cari berdasarkan NAMA PLACE di metadata
+    const metadataResult = await client
+      .from('documents')
+      .select('id, content, metadata')
+      .ilike('metadata->>place', `%${q}%`)
+      .limit(limit);
+
+    if (contentResult.error) {
+      console.error('[TOBA DATA] Content search error:', contentResult.error);
+    }
+
+    if (metadataResult.error) {
+      console.error('[TOBA DATA] Metadata search error:', metadataResult.error);
+    }
+
+    // Gabungkan + hilangkan duplikat
+    const combined = [
+      ...(contentResult.data || []),
+      ...(metadataResult.data || [])
+    ];
+
+    const unique = Array.from(
+      new Map(combined.map(item => [item.id, item])).values()
+    );
+
+    console.log(
+      `[TOBA DATA] Search "${q}" → ${unique.length} results`
+    );
+
+    return unique.slice(0, limit) as TobaDocument[];
+
+  } catch (error) {
+    console.error('[TOBA DATA] Search exception:', error);
+    return [];
+  }
+}
+
+export async function getTobaDestinations(
+  limit = 200
+): Promise<TobaDocument[]> {
+  const client = getSupabase();
+
+  if (!client) return [];
+
+  try {
+    const { data, error } = await client
+      .from('documents')
+      .select('id, content, metadata')
+      .in('metadata->>sheet', [
+        'tempat-wisata-v1',
+        'wisata-v2',
+        'wisata-metadata'
+      ])
+      .limit(limit);
+
+    if (error) {
+      console.error('[TOBA DATA] Destination query error:', error);
+      return [];
+    }
+
+    console.log(
+      `[TOBA DATA] Loaded ${data?.length || 0} destinations from Supabase`
+    );
+
+    return (data || []) as TobaDocument[];
+  } catch (error) {
+    console.error('[TOBA DATA] Destination query exception:', error);
+    return [];
+  }
 }
 
 // Log Supabase configuration status
@@ -158,9 +264,9 @@ export const authService = {
   // Register a new user
   async register(email: string, password: string, fullName: string): Promise<AppUser> {
     const client = getSupabase();
-    const isEmailAdmin = 
+    const isEmailAdmin =
       email.toLowerCase() === 'adeliasimarmata9@gmail.com' ||
-      email.toLowerCase() === 'delia@tobainfinity.id' || 
+      email.toLowerCase() === 'delia@tobainfinity.id' ||
       email.toLowerCase().includes('admin');
     if (client) {
       try {
@@ -185,7 +291,7 @@ export const authService = {
           createdAt: new Date().toISOString(),
           role: isEmailAdmin ? 'admin' : 'user'
         };
-        
+
         try {
           const { error: dbError } = await client.from('users').insert({
             id: profileUser.id,
@@ -225,9 +331,9 @@ export const authService = {
   // Login an existing user
   async login(email: string, password: string): Promise<AppUser> {
     const client = getSupabase();
-    const isEmailAdmin = 
+    const isEmailAdmin =
       email.toLowerCase() === 'adeliasimarmata9@gmail.com' ||
-      email.toLowerCase() === 'delia@tobainfinity.id' || 
+      email.toLowerCase() === 'delia@tobainfinity.id' ||
       email.toLowerCase().includes('admin');
     if (client) {
       try {

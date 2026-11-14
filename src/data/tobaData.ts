@@ -27,7 +27,7 @@ export const TOBA_DESTINATIONS: Destination[] = [
     longitude: 99.0984,
     openingHours: '10:00 WIB - 17:00 WIB',
     ticketPrice: 550000,
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop',
+    image: 'https://onetoba.com/wp-content/uploads/2025/10/u09ulfz7n7vj8bp.jpeg',
     rating: 4.8,
     facilities: ['Paragliding Equipment', 'Professional Instructor', 'Insurance', 'Safety Gear', 'Photo Spots', 'Parking Lot']
   },
@@ -83,7 +83,7 @@ export const TOBA_DESTINATIONS: Destination[] = [
     longitude: 98.9372,
     openingHours: '09:00 WIB - 17:00 WIB',
     ticketPrice: 250000,
-    image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=800&auto=format&fit=crop',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcW_rFWaNYfONKwg6fLIVu8PLF7nw5USbDYWzFOFzZcYC-DWebxg6C-BU&s=10',
     rating: 4.8,
     facilities: ['Flyboard Apparatus', 'Safety Helmet', 'Life Jacket', 'Professional Instructor', 'Speedboat Support']
   },
@@ -111,7 +111,7 @@ export const TOBA_DESTINATIONS: Destination[] = [
     longitude: 98.5304,
     openingHours: '09:00 WIB - 17:00 WIB',
     ticketPrice: 900000,
-    image: 'https://images.unsplash.com/photo-1594568284297-7c64464062b1?q=80&w=800&auto=format&fit=crop',
+    image: 'https://asset-2.tstatic.net/medan/foto/bank/images/kuliki_paralayang_club.jpg',
     rating: 4.9,
     facilities: ['Tandem Flight Pilots', 'Certified Safety Gear', 'Personal Insurance', 'GoPro Aerial Video', 'Rest Lounge']
   },
@@ -153,7 +153,7 @@ export const TOBA_DESTINATIONS: Destination[] = [
     longitude: 98.9712,
     openingHours: 'Event-Based Schedule',
     ticketPrice: 25000,
-    image: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800&auto=format&fit=crop',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZuqtjsUF84InxbHtYjSzhvkvZ1ZgUxkefIZUMH8YGHg&s=10',
     rating: 4.8,
     facilities: ['Race Track Arena', 'Tribun Penonton', 'Local Food Court', 'Gondang Live Music', 'Restrooms']
   },
@@ -167,7 +167,7 @@ export const TOBA_DESTINATIONS: Destination[] = [
     longitude: 98.8953,
     openingHours: '08:00 WIB - 18:00 WIB',
     ticketPrice: 500000,
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop',
+    image: 'https://bisanews.id/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-04-at-08.00.58_7f256ca3.jpg',
     rating: 4.9,
     facilities: ['Tandem Flights', 'Professional Flight Instructors', 'Telescope Viewing Deck', 'Pine Forest Hiking Trails', 'Food Court', 'Worship Room']
   },
@@ -209,7 +209,7 @@ export const TOBA_DESTINATIONS: Destination[] = [
     longitude: 98.7423,
     openingHours: '08:00 WIB - 18:00 WIB',
     ticketPrice: 10000,
-    image: 'https://images.unsplash.com/photo-1621886292650-520f76c747d6?q=80&w=800&auto=format&fit=crop',
+    image: 'https://tse1.mm.bing.net/th/id/OIP.WNwKIGYVeQBEcnHJGM7BPgHaEJ?r=0&pid=Api&h=220&P=0',
     rating: 4.9,
     facilities: ['Weaving Workshop Tour', 'Handicraft Souvenir Shops', 'Historic Ruma Bolon Houses', 'Local Home Guides', 'Worship Room', 'Clean Toilets']
   }
@@ -340,7 +340,7 @@ export const TOBA_CULINARY: Culinary[] = [
       { name: 'Rumah Makan Nasional Balige', address: 'Jl. Sisingamangaraja No. 22, Balige, Toba', mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Rumah+Makan+Nasional+Balige' },
       { name: 'RM Silindung Samosir', address: 'Jl. Tuk Tuk, Tuk Tuk Siadong, Samosir', mapsUrl: 'https://www.google.com/maps/search/?api=1&query=RM+Silindung+Samosir+Tuk+Tuk' }
     ],
-    image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=800&auto=format&fit=crop',
+    image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-FqELj7oPLOEDAJdaEIX6t6Hgh5HE78e4wCiBXacq7HrMP0u654LAb1ylonVSmKBNXl7hJLtctIdCGQnyfKg-30yvrSrxdS-ZRaCtpZz6m0AblIWiPitSgUIoNyBSKciPYLAmrq9H5iRfX6D8iOiM_VtavcGDLq1bz-yYNufM77ONBDdiuE0gK8F12ELA/s1200/Makanan-khas-batak.jpg',
     youtubeUrl: 'https://www.youtube.com/embed/Sshx904Yg0o'
   },
   {
@@ -366,7 +366,7 @@ export const TOBA_CULINARY: Culinary[] = [
       { name: 'RM Lapo Batak Tipang', address: 'Geosite Tipang Lakeside, Bakkara, Humbang Hasundutan', mapsUrl: 'https://www.google.com/maps/search/?api=1&query=RM+Lapo+Batak+Tipang+Lakeside' },
       { name: 'RM Na Niura Balige', address: 'Jl. Patuan Nagari, Balige, Toba', mapsUrl: 'https://www.google.com/maps/search/?api=1&query=RM+Na+Niura+Balige' }
     ],
-    image: 'https://images.unsplash.com/photo-1559183030-895177ef154b?q=80&w=800&auto=format&fit=crop',
+    image: 'https://ik.imagekit.io/goodid/gnfi/uploads/articles/large-1560768797-800px-dengke-mas-na-n-2-05d18fe5af2522cd54f2823a9a854f95.jpg',
     youtubeUrl: 'https://www.youtube.com/embed/W9m0Tz_oNis'
   },
   {
@@ -393,7 +393,7 @@ export const TOBA_CULINARY: Culinary[] = [
       { name: 'Warung Mie Gomak Mak Tina', address: 'Pusat Pasar Balige, Balige, Toba', mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Warung+Mie+Gomak+Mak+Tina+Balige' },
       { name: 'Mie Gomak Tuk Tuk', address: 'Jl. Ring Road Samosir, Tuk Tuk, Samosir', mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Mie+Gomak+Tuk+Tuk+Samosir' }
     ],
-    image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=800&auto=format&fit=crop',
+    image: 'https://tse4.mm.bing.net/th/id/OIP.b5C10oKVTHwZoDDaTRgp4QHaEK?r=0&pid=Api&h=220&P=0',
     youtubeUrl: 'https://www.youtube.com/embed/fO0hP-iGZ5g'
   },
   {
@@ -420,7 +420,7 @@ export const TOBA_CULINARY: Culinary[] = [
       { name: 'Lapo Niagara Parapat', address: 'Jl. Niagara No. 12, Parapat, Simalungun', mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Lapo+Niagara+Parapat' },
       { name: 'RM Sinar Tuk Tuk', address: 'Jl. Tuk Tuk, Tuk Tuk, Samosir', mapsUrl: 'https://www.google.com/maps/search/?api=1&query=RM+Sinar+Tuk+Tuk+Samosir' }
     ],
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop',
+    image: 'https://3.bp.blogspot.com/-OLjKben7XKc/WWb9ojyXT3I/AAAAAAAAAEw/sIilOsFOso83_y9CjAiHsolqcmp-5C5RACLcBGAs/w1200-h630-p-k-no-nu/Saksang.jpg',
     youtubeUrl: 'https://www.youtube.com/embed/nUvGf0_K678'
   },
   {
@@ -445,7 +445,7 @@ export const TOBA_CULINARY: Culinary[] = [
     recommendedLocations: [
       { name: 'Kue Ombus-Ombus No. 1 Noer Siborongborong', address: 'Jl. Sisingamangaraja, Siborong-Borong, Tapanuli Utara', mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Kue+Ombus-Ombus+No.+1+Noer+Siborongborong' }
     ],
-    image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=800&auto=format&fit=crop',
+    image: 'https://thumb.viva.id/vivawisata/665x374/2025/04/18/68027ba9bebea-kue-ombus-ombus_wisata.jpg',
     youtubeUrl: 'https://www.youtube.com/embed/WbLzY4jZ-tQ'
   }
 ];
@@ -462,9 +462,9 @@ export const TOBA_CULTURES: Culture[] = [
 3. **Manat Mardongan Tubu** (Hati-hati dan Bijaksana dengan Saudara Semarga): Dongan Tubu adalah saudara laki-laki kandung maupun saudara satu garis keturunan marga paternal. Karena memiliki status waris dan kedudukan adat yang setara, konflik atau persaingan mudah sekali tersulut. Oleh karena itu, komunikasi antar-saudara semarga wajib dijaga dengan kehati-hatian tinggi, saling menopang, sopan santun, dan kerja sama yang erat.
 
 Sistem kekerabatan Dalihan Na Tolu menciptakan struktur sosial yang sangat dinamis dan demokratis: tidak ada kasta yang menetap, karena setiap pria Batak dalam waktu bersamaan dapat berperan sebagai Hula-hula yang dihormati di satu pesta pernikahan, sekaligus bertindak sebagai Boru yang bekerja keras melayani tamu di pesta kerabat lainnya.`,
-    image: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=800&auto=format&fit=crop',
+    image: 'https://1.bp.blogspot.com/-nrKX7CXvXjM/XVrPnBu-P2I/AAAAAAAACWY/3EgwSJtJ4VsUKUdf-NJeuroamLCLhQLBgCLcBGAs/w1200-h630-p-k-no-nu/Pejuang%2BSuku%2BBatak%2BToba.jpg',
     category: 'philosophy',
-    youtubeUrl: 'https://www.youtube.com/embed/6m6uT0yS0n4'
+    youtubeUrl: 'https://youtu.be/2XBPAxqUHLY?si=sC4DN3xow4t2N9nc'
   },
   {
     id: 'cult-script',
@@ -475,7 +475,7 @@ Sistem kekerabatan Dalihan Na Tolu menciptakan struktur sosial yang sangat dinam
 Aksara ini terdiri dari 19 karakter dasar (Ina ni Surat) yang secara bawaan mengandung vokal 'a'. Untuk merubah bunyi vokal menjadi 'i', 'u', 'e', atau 'o', atau untuk mematikan vokal sama sekali (tanda pangolat), tanda diakritik kecil (Anak ni Surat) ditempelkan di atas, bawah, atau di samping karakter dasar.
 
 Keunikan Surat Batak terletak pada penggunaannya yang bersifat sakral dan intelektual. Aksara ini tidak digunakan untuk urusan administrasi pemerintahan biasa, melainkan dipahat oleh para Datu (pendeta spiritual/dukun Batak) pada tabung bambu atau ditulis pada "Pustaha Laklak"—buku lipat akordeon legendaris yang terbuat dari serat kulit pohon alim liar. Pustaha Laklak ini mendokumentasikan ilmu perbintangan kuno (Pranata Mangsa), ramalan hari baik, resep rahasia jamu herbal penyembuh penyakit, hingga mantra perlindungan perang suku. Surat Batak adalah bukti nyata tingginya literasi dan peradaban ilmiah nenek moyang Toba.`,
-    image: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=800&auto=format&fit=crop',
+    image: 'https://siplahtelkom.com/public/products/201255/4497851/285800.edba6329-1a3a-4cf4-b15d-d51b598693be.PAPAN-AKSA.jpg',
     category: 'script',
     youtubeUrl: 'https://www.youtube.com/embed/v9qI2P1A-mU'
   },
@@ -493,7 +493,7 @@ Setiap motif kain Ulos memiliki fungsi adat yang sangat spesifik dan sakral:
 - **Ulos Ragi Hotang**: Melambangkan rotan yang kuat dan ulet, diberikan kepada pasangan pengantin baru agar pernikahan mereka kokoh, fleksibel, dan tak terpisahkan bagai jalinan rotan hutan.
 
 Prosesi mengalungkan kain Ulos di pundak seseorang ("Mangulosi") hanya boleh dilakukan oleh kerabat yang memiliki posisi kekerabatan lebih tinggi dalam tatanan Dalihan Na Tolu (seperti paman/Hula-hula kepada keponakan) untuk mengalirkan doa keberkatan hidup.`,
-    image: 'https://images.unsplash.com/photo-1621886292650-520f76c747d6?q=80&w=800&auto=format&fit=crop',
+    image: 'https://tse3.mm.bing.net/th/id/OIP.q2uVep_tZv5pkou05ZPrewHaFj?r=0&pid=Api&h=220&P=0',
     category: 'craft',
     youtubeUrl: 'https://www.youtube.com/embed/S2pE_TjU6Lg'
   },
@@ -510,7 +510,7 @@ Setiap gerakan jari dan telapak tangan penari membawa makna komunikasi spiritual
 - Tangan yang diangkat setinggi pundak dengan jari mengepal halus melambangkan penghormatan mendalam dan pemanggilan roh para leluhur suci serta permohonan restu.
 
 Tor-Tor ditarikan bukan sebagai hiburan semata, melainkan bagian dari peribadatan adat komunal di mana marga-marga berkumpul untuk saling memberi hormat, menghaturkan syukur, dan meneguhkan jalinan kasih kekeluargaan.`,
-    image: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=800&auto=format&fit=crop',
+    image: 'https://tse1.mm.bing.net/th/id/OIP.SGQ6rUUgwXF9KMBaXjRnGwHaD4?r=0&pid=Api&h=220&P=0',
     category: 'art',
     youtubeUrl: 'https://www.youtube.com/embed/qsh3N6O6vD8'
   },
@@ -527,7 +527,7 @@ Instrumen utama pembentuk orkestra ini meliputi:
 4. **Sarune Bolon**: Alat musik tiup sejenis oboe berlubang ganda berkekuatan suara melengking tinggi, yang meniupkan melodi ratapan suci pembuka tarian Tor-Tor.
 
 Dalam spiritualitas kuno Batak, Gondang Sabangunan dipercaya sebagai jembatan getaran antara dunia fana manusia (Banua Tonga) dengan dimensi surgawi kediaman para dewa dan roh leluhur (Banua Ginjand). Harmoni poliritmik hipnotis dari Gondang dirancang untuk memfokuskan energi persatuan komunal klan.`,
-    image: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=800&auto=format&fit=crop',
+    image: 'https://batakbercerita.com/images/gondang-music.jpg',
     category: 'art',
     youtubeUrl: 'https://www.youtube.com/embed/8v_CjV55x2E'
   },
@@ -545,7 +545,7 @@ Secara vertikal, Ruma Bolon dibagi secara filosofis menjadi tiga tingkat utama y
 3. **Bagian Atap (Sabu)**: Ruang loteng tinggi beratap rumbia tempat menyimpan benih padi pusaka serta pusaka adat leluhur. Ini melambangkan "Banua Ginjand"—dunia atas, takhta roh-roh suci pembawa berkah.
 
 Bagian depan rumah dihiasi dengan ukiran kayu bernilai seni tinggi yang disebut "Gorga". Gorga Batak didominasi warna merah, hitam, dan putih yang digambar membentuk sulur tanaman melingkar, gambar cicak (simbol kesabaran/adaptasi tinggi), dan sepasang mata kerbau besar sebagai penangkal petaka rohani.`,
-    image: 'https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?q=80&w=800&auto=format&fit=crop',
+    image: 'https://pagaralampos.disway.id/upload/9e7ed0a6e3f6e6535c0f14325c240211.jpg',
     category: 'craft',
     youtubeUrl: 'https://www.youtube.com/embed/i0pTAtg96jI'
   }

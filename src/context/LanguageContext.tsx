@@ -12,7 +12,6 @@ export const translations = {
     'nav.planner': 'AI Trip Planner',
     'nav.culture': 'Seni Budaya',
     'nav.culinary': 'Kuliner',
-    'nav.profile': 'Profil Saya',
     'nav.chat': 'Asisten AI',
     'button.ask_ai': 'Tanya Asisten AI',
     'button.login_session': 'Sesi masuk:',
@@ -56,8 +55,7 @@ export const translations = {
     'dash.nav.cult_desc': 'Edukasi sejarah, aksara & dokumentasi video',
     'dash.nav.cul_title': 'Kuliner Autentik',
     'dash.nav.cul_desc': 'Panduan resep video & lapo bersertifikat maps',
-    'dash.nav.prof_title': 'Profil Saya',
-    'dash.nav.prof_desc': 'Manajemen akun & saringan preferensi Supabase',
+
 
     // Weather & Notification
     'dash.weather.title': 'Cuaca & Rekomendasi Aktivitas',
@@ -155,7 +153,6 @@ export const translations = {
     'dash.nav.cult_desc': 'Educational history, scripts & video documentation',
     'dash.nav.cul_title': 'Authentic Culinary',
     'dash.nav.cul_desc': 'Recipe video guides & maps-certified lapo listings',
-    'dash.nav.prof_title': 'My Profile',
     'dash.nav.prof_desc': 'Manage accounts & customize preferences',
 
     // Weather & Notification

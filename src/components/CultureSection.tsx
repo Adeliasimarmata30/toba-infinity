@@ -132,7 +132,7 @@ export default function CultureSection() {
           </p>
         </div>
         <img
-          src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=600&auto=format&fit=crop"
+          src="https://i.pinimg.com/originals/2d/62/37/2d6237c15d5fbe21b4d3019a26212ad2.jpg"
           alt="Traditional Batak"
           className="w-full md:w-64 h-40 object-cover rounded-[18px] shadow-lg border border-white/20 shrink-0 z-10"
         />

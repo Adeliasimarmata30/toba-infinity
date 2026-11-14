@@ -751,7 +751,7 @@ export default function Dashboard() {
             { id: 'planner', label: t('dash.nav.plan_title'), desc: t('dash.nav.plan_desc'), icon: Calendar, color: 'hover:bg-indigo-50 text-[#0F4C81] hover:border-[#0F4C81]/20' },
             { id: 'culture', label: t('dash.nav.cult_title'), desc: t('dash.nav.cult_desc'), icon: BookOpen, color: 'hover:bg-emerald-50 text-emerald-600 hover:border-emerald-200' },
             { id: 'culinary', label: t('dash.nav.cul_title'), desc: t('dash.nav.cul_desc'), icon: Coffee, color: 'hover:bg-rose-50 text-rose-600 hover:border-rose-200' },
-            { id: 'profile', label: t('dash.nav.prof_title'), desc: t('dash.nav.prof_desc'), icon: User, color: 'hover:bg-slate-50 text-[#0F172A] hover:border-slate-300' }
+            
           ].map(menuItem => {
             const Icon = menuItem.icon;
             return (
